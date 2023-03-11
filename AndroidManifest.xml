@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>便签</title>
+<icon>icon.png</icon>
+<packageName>com.ybj</packageName>
+<versionName>4.0</versionName>
+<versionint>2023</versionint>
+<sdk>24</sdk>
+<yuv>3</yuv>
+
+<remark></remark>
+<Permissions>android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.INTERNET</Permissions>
+<createTime>2023-03-06 10:52:23</createTime>
+<upTime>2023-03-06 10:52:23</upTime>
