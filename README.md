@@ -7,7 +7,7 @@
     <img src="https://raw.githubusercontent.com/ZIDC/com.cjzwj-Cloud-note/main/预览/7389C2D4-58CD-41CD-AD9E-84122E12925E.png" width="60"/>
   <br>
 ＂小而美＂云便签
-
+<br>
  ---- 
 <img src="https://raw.githubusercontent.com/ZIDC/com.cjzwj-Cloud-note/main/预览/7E09BFA6-DF80-45FE-9828-338F10109003.jpeg" width="300"/>
   <br>
@@ -39,7 +39,7 @@
   
 - [x] [成品Releases](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases)
 
-[打包工具](https://github.com/ZIDC/com.cjzwj-Cloud-note/raw/main/sdz.app)
+[打包工具](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases/download/4.0/szd.apk)
 
  
 
