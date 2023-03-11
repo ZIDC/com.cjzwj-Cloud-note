@@ -1,0 +1,1199 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>ps=主根布局
+width=-1
+height=-1
+orientation=vertical
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="47" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+BackgroundColor=#FFF7F7F7</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="LinearLayout">
+<ppt>ps=根布局
+width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="49" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="50" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="53" did="50" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="55" did="53" type="CardView">
+<ppt>width=35dp
+height=35dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#00ffffff
+app_CardcornerRadius=10dp
+layout_marginRight=26dp</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event></event>
+</View>
+<View id="54" did="56" type="ImageView">
+<ppt>width=23dp
+height=23dp
+src=@4693b4a4865fe5b1df5738b11dde6444..png
+</ppt>
+<event></event>
+</View>
+<View id="51" did="50" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="52" did="51" type="TextView">
+<ppt>width=-2
+height=-2
+text=笔记
+textSize=34sp
+textColor=#ff000000
+typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
+layout_marginLeft=28dp</ppt>
+<event></event>
+</View>
+<View id="57" did="50" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="58" did="57" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="59" did="57" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="60" did="59" type="ImageView">
+<ppt>width=230dp
+height=230dp
+src=@6c73e6309b95ca26c59611fb30614fdb..jpg
+</ppt>
+<event></event>
+</View>
+<View id="61" did="59" type="ProgressBar">
+<ppt>width=45dp
+height=45dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="62" did="47" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|right</ppt>
+<event></event>
+</View>
+<View id="63" did="62" type="CardView">
+<ppt>width=58dp
+height=55dp
+layout_marginRight=30dp
+layout_marginBottom=30dp
+app_CardElevation=30dp
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#fff9f9f9
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="64" did="63" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clipChildren=true</ppt>
+<event><eventItme type="clicki">
+uigo("fb.iyu")
+sss 添加笔记 = "true"</eventItme></event>
+</View>
+<View id="65" did="64" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@1cf44ee7b7ead68b462d1927635206ec..png</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>ps=登录界面/注册
+width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event><eventItme type="clicki">syso("不可点击")</eventItme></event>
+</View>
+<View id="4" did="3" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>ps=主背景
+width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="43" did="5" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="8" did="43" type="LinearLayout">
+<ppt>ps=背景文字图片
+width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff
+</ppt>
+<event></event>
+</View>
+<View id="29" did="8" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="10" did="29" type="ImageView">
+<ppt>width=-1
+height=-1
+scaleType=centercrop
+src=@a65e67a9cac16725f2edc34334a2f8b1..png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="46" did="29" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="28" did="29" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#35000000
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="9" did="30" type="TextView">
+<ppt>width=-1
+height=-2
+text=云·记录
+gravity=center
+textSize=35sp
+textColor=#ff606060
+typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
+layout_marginTop=200dp
+layout_marginBottom=6dp
+shadowRadius=5
+shadowColor=#ffdedede
+shadowDx=1.1
+shadowDy=1.1</ppt>
+<event></event>
+</View>
+<View id="11" did="30" type="TextView">
+<ppt>width=-1
+height=-2
+text=小而美.这些都是废话
+textSize=26sp
+gravity=center
+textColor=#ff242424
+layout_marginLeft=10dp
+layout_marginTop=6dp
+typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
+shadowRadius=8
+shadowColor=#a3ffffff
+shadowDx=1
+shadowDy=1
+</ppt>
+<event></event>
+</View>
+<View id="6" did="43" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="CardView">
+<ppt>width=-1
+height=450dp
+app_CardcornerRadius=30dp
+layout_marginBottom=-35dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffffffff
+layout_marginTop=15dp
+</ppt>
+<event></event>
+</View>
+<View id="42" did="7" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="12" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="38" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="31" did="38" type="LinearLayout">
+<ppt>ps=登录标题文本
+width=-1
+height=-2
+orientation=vertical
+gravity=center
+visibility=invisible
+layout_marginTop=50dp</ppt>
+<event></event>
+</View>
+<View id="32" did="31" type="TextView">
+<ppt>width=-1
+height=-2
+text=登录ba！
+textSize=26sp
+gravity=center
+textColor=#ff242424
+layout_marginTop=15dp
+layout_marginBottom=15dp
+typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
+</ppt>
+<event></event>
+</View>
+<View id="13" did="38" type="LinearLayout">
+<ppt>ps=用户名
+width=-1
+height=70dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="CardView">
+<ppt>width=-1
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=8dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+</ppt>
+<event></event>
+</View>
+<View id="16" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="15" did="16" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=1.7dp
+layout_marginRight=1.7dp
+layout_marginTop=1.7dp
+layout_marginBottom=1.7dp
+app_CardBackgroundColor=#fffbfbfb</ppt>
+<event></event>
+</View>
+<View id="17" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=账号
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入账号/用户名
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actionnext
+inputType=textcapcharacters
+paddingRight=15dp</ppt>
+<event></event>
+</View>
+<View id="20" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true
+</ppt>
+<event><eventItme type="clicki">//sss.url
+//重要参数appid=10000&device=123
+//7整个登录界面卡片阴影
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮
+//39登录文本真
+//37登录加载圈圈
+//36登录文本假
+//38整个登录卡片
+
+
+us(31,"visibility",0)
+dhas(dh, 31, "translationY", 0,-250)
+dh(dh, "duration", 350)
+dh(dh, "start")
+
+us(20,"visibility",8)
+dhas(dh, 13, "translationY", 0, -250)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+us(21,"visibility",0)
+dhas(dh, 21, "translationY", 0, -250)
+dh(dh, "duration", 450)
+dh(dh, "start")
+
+us(33,"visibility",0)
+dhas(dh, 33, "translationY", 0, -250)
+dh(dh, "duration", 480)
+dh(dh, "start")
+
+us(7,"app_CardElevation","10dp")
+us(10,"visibility",0)
+us(28,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 460)
+us(10, "dh", dh)
+us(28, "dh", dh)
+us(31, "dh", dh)
+us(21, "dh", dh)
+us(33, "dh", dh)</eventItme></event>
+</View>
+<View id="21" did="38" type="LinearLayout">
+<ppt>ps=密码
+width=-1
+height=70dp
+orientation=vertical
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="45" did="21" type="CardView">
+<ppt>width=-1
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+app_CardBackgroundColor=#fffbfbfb
+</ppt>
+<event></event>
+</View>
+<View id="25" did="45" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="TextView">
+<ppt>width=-2
+height=-2
+text=密码
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="27" did="25" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入密码
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actiondone
+inputType=textpassword
+paddingRight=15dp</ppt>
+<event><eventItme type="aftertextchanged">
+//sss.url
+//重要参数appid=10000&device=123
+//7整个登录界面卡片阴影
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮
+//39登录文本真
+//37登录加载圈圈
+//36登录文本假
+//38整个登录卡片
+
+ug(27,"text",slj)
+slg(slj,zhi)
+f(zhi &gt;= "6")
+{
+  ufnsui()
+  {
+    //密码编辑框大于6位数开启
+    us(39,"visibility",0)
+    us(36,"visibility",8)
+    us(34,"app_cardbackgroundcolor","#ff0a74fd")
+  }
+}
+else
+{
+  ufnsui()
+  {
+    //否则关闭
+    us(39,"visibility",8)
+    us(36,"visibility",0)
+    us(34,"app_cardbackgroundcolor","#ffa5c8ff")    
+  }
+}</eventItme></event>
+</View>
+<View id="33" did="38" type="LinearLayout">
+<ppt>ps=登录
+width=-1
+height=-2
+orientation=vertical
+gravity=center
+visibility=gone
+</ppt>
+<event></event>
+</View>
+<View id="34" did="33" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+layout_marginTop=1.7dp
+app_CardBackgroundColor=#ffa5c8ff</ppt>
+<event></event>
+</View>
+<View id="35" did="34" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="TextView">
+<ppt>ps=登录文本假
+width=-1
+height=-1
+text=登录
+textColor=#ffffffff
+textSize=15sp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="39" did="35" type="TextView">
+<ppt>ps=登录文本真
+width=-1
+height=-1
+text=登录
+textColor=#ffffffff
+textSize=15sp
+gravity=center
+background=selectableitem
+clickable=true
+visibility=gone</ppt>
+<event><eventItme type="clicki">//sss.url
+//重要参数appid=10000&device=123
+//7整个登录界面卡片阴影
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮
+//39登录文本真
+//37登录加载圈圈
+//36登录文本假
+//38整个登录卡片
+
+
+
+us(36,"visibility",8)
+us(39,"visibility",8)
+us(37,"visibility",0)
+t()
+{
+  ss(sss.url+"/api/getNotice",login)
+  ss("appid="+sss.appld,sqid)
+  hs(login,sqid, "utf-8", null, true, ggede)
+  json(ggede, jojx)
+  
+  json(jojx, "get", "code", wezt)
+  
+  json(jojx, "get", "data", data)
+  //公告标题
+  json(data, "get", "title", title)
+  //公告内容
+  json(data, "get", "content", content)
+  //公告时间
+  json(data, "get", "time",timea)
+  f(wezt == "200")
+  {
+    ufnsui()
+    {
+      //成功
+      
+      
+      us(36,"visibility",8)
+      us(39,"visibility",0)
+      us(37,"visibility",8)
+      
+      //弹窗公告
+      s iyu ="pa.iyu"
+      s bln ="false"
+      javanew(ss.pautwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
+      nvw(111,111,"相对布局","width=-1\nheight=-1",ss.pa载体)
+      addv(ss.pa载体,iyu)
+      java(null,ss.pautwv,"android.app.Dialog.setContentView","android.view.View",ss.pa载体)
+      java(hq,ss.pautwv,"android.app.Dialog.getWindow")
+      java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
+      
+      java(null,ss.pautwv,"android.app.Dialog.setCancelable","boolean",bln)
+      java(null,ss.pautwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
+      java(null,ss.pautwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
+      {
+        
+      }
+      java(null,ss.pautwv,"android.app.Dialog.show")
+      
+      gvs(ss.pa载体,"pa.7",panr)
+      gvs(ss.pa载体,"pa.12",patime)
+      gvs(ss.pa载体,"pa.5",pabt)
+      us(panr,"text",content)
+      us(pabt,"text",title)
+      us(patime,"text",timea)
+      //弹窗公告
+      
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //失败
+      us(36,"visibility",8)
+      us(39,"visibility",0)
+      us(37,"visibility",8)
+      
+    }
+  }
+  
+  
+}</eventItme></event>
+</View>
+<View id="37" did="35" type="ProgressBar">
+<ppt>width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="66" did="33" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+</ppt>
+<event></event>
+</View>
+<View id="67" did="66" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="68" did="67" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="69" did="68" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="71" did="69" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="72" did="71" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈
+//33验证码编辑框
+//26发送验证码按钮
+//29发送邮箱冷却
+
+s iyu ="czmm.iyu"
+s bln ="true"
+javanew(ss.czmmutwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
+nvw(111,111,"相对布局","width=-1\nheight=-1",ss.czmm载体)
+addv(ss.czmm载体,iyu)
+java(null,ss.czmmutwv,"android.app.Dialog.setContentView","android.view.View",ss.czmm载体)
+java(hq,ss.czmmutwv,"android.app.Dialog.getWindow")
+java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
+
+java(null,ss.czmmutwv,"android.app.Dialog.setCancelable","boolean",bln)
+java(null,ss.czmmutwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
+java(null,ss.czmmutwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
+{
+java(null,ss.czmmutwv,"android.app.Dialog.dismiss")  
+}
+java(null,ss.czmmutwv,"android.app.Dialog.show")
+
+
+//注册弹窗
+gvs(ss.czmm载体,"czmm.9",ss.czmmyhm)
+gvs(ss.czmm载体,"czmm.14",ss.czmmmm)
+gvs(ss.czmm载体,"czmm.17",ss.czmmzcan)
+gvs(ss.czmm载体,"czmm.18",ss.czmmjz)
+gvs(ss.czmm载体,"czmm.22",ss.czmmyx)
+gvs(ss.czmm载体,"czmm.33",ss.czmmyxyzm)
+gvs(ss.czmm载体,"czmm.26",ss.czmmyz)
+gvs(ss.czmm载体,"czmm.29",ss.czmmyzm)</eventItme></event>
+</View>
+<View id="70" did="72" type="TextView">
+<ppt>width=-1
+height=-1
+text=忘记密码？
+gravity=center
+textColor=#ff3a3a3a
+layout_marginTop=5dp
+layout_marginBottom=5dp
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="73" did="66" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="74" did="73" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe7e7e7</ppt>
+<event></event>
+</View>
+<View id="75" did="74" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="76" did="75" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=4dp
+app_CardElevation=0dp
+layout_margin=0.3dp
+app_CardBackgroundColor=#fffafafa</ppt>
+<event></event>
+</View>
+<View id="77" did="76" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈
+//22邮箱
+//注册弹窗
+s iyu ="re.iyu"
+s bln ="true"
+javanew(ss.reutwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
+nvw(111,111,"相对布局","width=-1\nheight=-1",ss.re载体)
+addv(ss.re载体,iyu)
+java(null,ss.reutwv,"android.app.Dialog.setContentView","android.view.View",ss.re载体)
+java(hq,ss.reutwv,"android.app.Dialog.getWindow")
+java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
+
+java(null,ss.reutwv,"android.app.Dialog.setCancelable","boolean",bln)
+java(null,ss.reutwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
+java(null,ss.reutwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
+{
+java(null,ss.reutwv,"android.app.Dialog.dismiss")  
+}
+java(null,ss.reutwv,"android.app.Dialog.show")
+
+
+//注册弹窗
+gvs(ss.re载体,"re.9",ss.reyhm)
+gvs(ss.re载体,"re.14",ss.remm)
+gvs(ss.re载体,"re.17",ss.rezcan)
+gvs(ss.re载体,"re.18",ss.rejz)
+gvs(ss.re载体,"re.22",ss.reyx)
+
+gvs(ss.re载体,"re.22",v)  
+java(null,v,"android.widget.TextView.setError","CharSequence","并非必须,不填写则无法修改/找回密码")  
+//编辑框右边会出现一个感叹号下面有警告提示 
+</eventItme></event>
+</View>
+<View id="78" did="77" type="TextView">
+<ppt>width=-1
+height=-1
+text=还没账号？
+gravity=center
+textColor=#ff3a3a3a
+layout_marginTop=5dp
+layout_marginBottom=5dp
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+//sss.url
+//重要参数appid=10000&device=123
+//3登录根布局
+//7整个登录界面卡片阴影
+//8登录后隐藏(登录背景布局)
+//6登录后隐藏(登录卡片布局)
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮卡片
+//34登录按钮
+//36登录文本真
+//37登录加载圈圈
+//39登录文本假
+//38整个登录卡片
+
+//49状态栏空间
+//59列表提示主布局
+//58主列表
+//60无笔记提示
+//61笔记加载圈
+//63添加笔记
+
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(49,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+//重要配置
+sss url="http://api.cjzwjyun.cf"
+ss("&appid=10000&device=123",sss.appid)
+sss appld="10000"
+
+//addv(1,"xg.iyu")
+//us(xg.3,"height",skk)
+/.
+//首次载入动画
+dha(dh, false, true)
+dh(dh, "duration", 430)
+us(13, "dh", dh)
+us(9, "dh", dh)
+us(11, "dh", dh)
+us(20,"visibility",0)
+dhas(dh, 13, "translationY", 250,0)
+dh(dh, "duration", 470)
+dh(dh, "start")
+
+dhas(dh, 9, "translationY", -80,0)
+dh(dh, "duration", 500)
+dh(dh, "start")
+
+dhas(dh, 11, "translationY", -80,0)
+dh(dh, "duration", 470)
+dh(dh, "start")
+./
+
+
+
+
+//模糊库
+//loadjar("Blur.zip",loadjar)
+//cls(loadjar,"com.lumyuan.lt.seven.Widget.BlurView",cls)
+//javanew(BlurView,cls,"Context",activity,"android.util.AttributeSet",null)
+//javax(null,BlurView,cls,"setBlurRadius","float",100)
+//javax(null,BlurView,cls,"setOverlayColor","int",16777215)
+//nvw(BlurView,xg.27)
+
+
+
+
+fr("$user.jar",pddl)
+json(pddl, tetx)
+json(tetx, "get", "data", jxjs)
+json(jxjs, "get", "username", admi)
+json(jxjs, "get", "userpassword", passw)
+
+t()
+{
+  ss(sss.url+"/api/Login/",login)
+  ss("username="+admi+"&password="+passw+sss.appid,apu)
+  hs(login,apu, "utf-8", null, true, loged)
+  json(loged, jojx)
+  json(jojx, "get", "msg", wec)
+  f(wec == "登录成功")
+  {
+    ufnsui()
+    {
+      //登录成功
+      
+      fn login.logobjlb()
+      //保存重要参数
+      ss("userpassword\":\""+passw+"\",\"usertoken\"",jsonth)
+      sr(loged,"usertoken\"",jsonth,wcth)
+      fw("$user.jar", wcth)      
+      //添加笔记载入按钮动画
+      us(63,"visibility",0)
+      dhas(dh, 63, "scaleY", 0.2,1.0)
+      dh(dh, "duration", 700)
+      dh(dh, "start")
+      
+      dhas(dh, 63, "scaleX", 0.2,1.0)
+      dh(dh, "duration", 700)
+      dh(dh, "start")
+      
+      dhr(dh, 90,0)
+      dh(dh, "duration", 700)
+      us(63, "dh", dh)
+      
+      
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //登录失败
+tw(wec)            
+      
+      //登录根布局
+      us(3,"visibility",0)
+      
+      
+      //登录背景布局显示
+      us(8,"visibility",0)
+      dha(dh, false, true)
+      dh(dh, "duration", 480)
+      us(8, "dh", dh)
+      
+      //登录卡片布局显示
+      dhas(dh, 6, "translationY", 500,0)
+      dh(dh, "duration", 550)
+      dh(dh, "start")
+      us(6,"visibility",0)
+      dha(dh, false, true)
+      dh(dh, "duration", 650)
+      us(6, "dh", dh)
+      
+      //首次载入动画
+      dha(dh, false, true)
+      dh(dh, "duration", 430)
+      us(13, "dh", dh)
+      us(9, "dh", dh)
+      us(11, "dh", dh)
+      us(20,"visibility",0)
+      dhas(dh, 13, "translationY", 250,0)
+      dh(dh, "duration", 470)
+      dh(dh, "start")
+      
+      dhas(dh, 9, "translationY", -80,0)
+      dh(dh, "duration", 500)
+      dh(dh, "start")
+      
+      dhas(dh, 11, "translationY", -80,0)
+      dh(dh, "duration", 470)
+      dh(dh, "start")
+      
+      
+      
+    }
+  }
+  
+  
+  
+  
+  
+}</eventItme><eventItme type="downkey">//sss.url
+//重要参数appid=10000&device=123
+//7整个登录界面卡片阴影
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮卡片
+//34登录按钮
+//36登录文本真
+//37登录加载圈圈
+//39登录文本假
+//38整个登录卡片
+[true]
+f(st_kC == "24")
+{
+}
+f(st_kC == "25")
+{
+}
+f(st_kC == "4")
+{
+  ufnsui()
+  {
+
+      fn enda.en()
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</eventItme><eventItme type="loadingComplete">//sss.url
+//重要参数appid=10000&device=123
+//7整个登录界面卡片阴影
+//9主页标语1
+//10登录界面背景图
+//11主页标语2
+//13登录编辑框布局
+//18登录界面展示文字
+//19账号编辑框内容
+//20登录编辑框点击空布局
+//21密码编辑框布局
+//27密码编辑框内容
+//31登录标题文本
+//33登录按钮卡片
+//34登录按钮
+//36登录文本真
+//37登录加载圈圈
+//39登录文本假
+//38整个登录卡片
+//8登录后隐藏(登录背景布局)
+//6登录后隐藏(登录卡片布局)
+//49状态栏空间
+//59列表提示主布局
+//58主列表
+//60无笔记提示
+//61笔记加载圈
+//63添加笔记
+
+
+
+ </eventItme><eventItme type="resume">
+f(sss.添加笔记 == "true")
+{
+  ufnsui()
+  {
+
+    sss 添加笔记 = "null"
+    fn login.logobjlb()
+  }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+    }
+  }
+  
+  
+  
+  
+  f(sss.修改笔记 == "true")
+{
+  ufnsui()
+  {
+    
+    sss 修改笔记 = "null"
+
+    fn login.logobjlb()
+  }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+    }
+  }
+  
+  
+  
+f(sss.删除笔记 == "true")
+{
+  ufnsui()
+  {
+
+sss 删除笔记 = "null"
+
+    fn login.logobjlb()
+  }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+    }
+  }</eventItme></UIEventset>
