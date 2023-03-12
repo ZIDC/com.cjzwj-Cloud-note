@@ -37,7 +37,9 @@
 
 > 软件已经开源，开源项目请自行在本界面下下载 - 编译版本下载在下方 以及打包工具   
   
-- [x] [成品Releases](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases)
+- [√] [成品Releases](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases)
+
+- [√] [开源地址](https://github.com/ZIDC/com.cjzwj-Cloud-note/tree/com.ybj4.0-Cloudnote)
 
 [打包工具](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases/download/4.0/szd.apk)
 
