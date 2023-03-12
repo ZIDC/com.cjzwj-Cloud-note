@@ -40,7 +40,7 @@
 
 - [x] [成品Releases](https://github.com/ZIDC/com.cjzwj-Cloud-note/releases)
 
-- [x][开源地址](https://github.com/ZIDC/com.cjzwj-Cloud-note/tree/com.ybj4.0-Cloudnote)
+- [x] [开源地址](https://github.com/ZIDC/com.cjzwj-Cloud-note/tree/com.ybj4.0-Cloudnote)
 
 
 
