@@ -926,7 +926,7 @@ java(null,cs,"android.view.Window.addFlags","int","67108864")
 
 
 //重要配置
-sss url="http://api.cjzwjyun.cf"
+sss url="后台url"
 ss("&appid=10000&device=123",sss.appid)
 sss appld="10000"
 
