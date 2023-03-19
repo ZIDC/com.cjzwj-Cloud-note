@@ -1,0 +1,243 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="10" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="6" did="2" type="RelativeLayout">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">ulag(st_vW,12,sss.文章id)
+ulag(st_vW,7,jm)
+ulag(st_vW,11,mmy)
+sj(mmy,"&lt;","&gt;",ss.jmmm)
+//20设置文章密码编辑框
+//15设置文章密码卡片布局
+//21内容编辑框
+//1修改内容主布局
+//9修改卡片主布局
+//6文章标题
+
+
+f(jm == "加密")
+{
+  
+    
+ss 修改内容密码框 = "false"
+s iyu ="mm.iyu"
+s bln ="true"
+javanew(ss.mmutwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
+nvw(111,111,"相对布局","width=-1\nheight=-1",ss.mm载体)
+addv(ss.mm载体,iyu)
+java(null,ss.mmutwv,"android.app.Dialog.setContentView","android.view.View",ss.mm载体)
+java(hq,ss.mmutwv,"android.app.Dialog.getWindow")
+java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
+
+java(null,ss.mmutwv,"android.app.Dialog.setCancelable","boolean",bln)
+java(null,ss.mmutwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
+java(null,ss.mmutwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
+{
+java(null,ss.mmutwv,"android.app.Dialog.dismiss")  
+}
+java(null,ss.mmutwv,"android.app.Dialog.show")
+
+
+//验证密码
+
+gvs(ss.mm载体,"mm.14",ss.mmmm)
+gvs(ss.mm载体,"mm.17",ss.mmzcan)
+gvs(ss.mm载体,"mm.18",ss.mmjz)
+
+  
+}
+else
+{
+  ufnsui()
+  {
+    ss 修改内容密码框 = "false"
+uigo("xg.iyu")
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//us(xg.1,"visibility",0)
+/.us(xg.9,"app_cardcornerradius","16dp")
+dha(dh, false, true)
+dh(dh, "duration", 500)
+us(xg.1, "dh", dh)
+
+
+dhas(dh, xg.1, "scaleY", 0.8,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+dhas(dh, xg.1, "scaleX", 0.8,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+
+dhas(dh, xg.1, "translationY", 170,0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+dhon(dh)
+{
+  us(xg.9,"app_cardcornerradius","0dp")
+}
+else
+{
+}
+else
+{
+}
+./
+</eventItme></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-1
+height=-1
+text=测试写满文本
+singleLine=true
+ellipsize=end
+paddingLeft=15dp
+layout_marginRight=15dp
+gravity=left|center
+textSize=17sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="7" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=英语缩略词“ANNOUNCE”经常作为“Announcement”的缩写来使用，中文表示：“公告”。本文将详细介绍英语缩写词ANNOUNCE所代表英文单词，其对应的中文拼音、详细解释以及在英语中的流行度。此外，还有关于缩略词ANNOUNCE的分类、应用领域及相关应用示例等。英文缩写ANNOUNC英文单词：Announcement缩写词中文简要解释：公告中文拼音：gōng gào缩写词分类：Miscellaneou缩写词领域：-1以上为Announcement英文缩略词ANNOUNCE的中文解释，以及该英文缩写在英语的流行度、分类和应用领域方面的信息。
+textSize=13sp
+textColor=#ff666666
+layout_marginLeft=15.5dp
+layout_marginRight=15.5dp
+layout_marginBottom=15.5dp
+layout_marginTop=5dp
+ellipsize=end
+maxLines=5</ppt>
+<event></event>
+</View>
+<View id="11" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=加密
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="0" type="TextView">
+<ppt>ps=id
+width=-2
+height=-2
+text=
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">/.
+//5标题
+//7内容
+ug(5,"text",bt)
+ug(7,"text",bjtj)
+ss("&content="+bjtj+"\",\"powif\": \"(false)&lt;dnnd&gt;",bjtjnr)
+
+sss url="http://api.cjzwjyun.cf"
+ss("&appid=10000&device=123",sss.appid)
+sss appld="10000"
+
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username", usname)
+json(usi, "get", "usertoken", token)
+ss("appid="+sss.appld+"&userid="+usid+"&username="+usname+"&title="+bt+bjtjnr+"&usertoken="+token,bjtjwc)
+ss(sss.url+"/api/addNotes",bjtjurl)
+
+
+//添加笔记
+t()
+{
+  hs(bjtjurl,bjtjwc, "utf-8", null, true, bjtjfh)
+  json(bjtjfh, jojx)
+json(jojx, "get", "msg", bjtjzt)
+syso(bjtjzt)
+syso(bjtjfh)
+f(bjtjzt == "添加完成")
+{
+  ufnsui()
+  {
+    //完成
+  }
+}
+else
+{
+  ufnsui()
+  {
+    //失败
+  }
+}
+
+
+
+
+}</eventItme></UIEventset>

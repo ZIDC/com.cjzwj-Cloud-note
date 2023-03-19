@@ -1,0 +1,99 @@
+
+
+
+fn en()
+
+
+ug(33,"visibility",dlkj)
+f(dlkj == "0")
+{
+  ufnsui()
+  {
+        
+    dha(dh, true, false)
+    dh(dh, "duration", 430)
+    us(31, "dh", dh)
+    us(38, "dh", dh)
+    dhon(dh)
+    {
+      us(31,"visibility",8)
+      us(38,"visibility",8)
+      endcode
+    }else
+    {
+    }else
+    {
+    }
+    
+    
+    us(20,"visibility",8)
+    dhas(dh, 13, "translationY", -250,0)
+    dh(dh, "duration", 350)
+    dh(dh, "start")
+    
+    dhas(dh, 21, "translationY", -250,0)
+    dh(dh, "duration", 350)
+    dh(dh, "start")
+    
+    
+    dhas(dh, 33, "translationY", -250,0)
+    dh(dh, "duration", 350)
+    dh(dh, "start")
+    
+    
+    
+    us(7,"app_CardElevation","0dp")
+    
+    dha(dh, true, false)
+    dh(dh, "duration", 380)
+    us(10, "dh", dh)
+    us(28, "dh", dh)
+    dhon(dh)
+    {
+      us(10,"visibility",8)
+      us(28,"visibility",8)
+      
+      us(21,"visibility",8)
+      us(33,"visibility",8)
+      us(19,"text","")
+      us(21,"text","")
+      
+      
+      t()
+      {
+        stop("200")
+        ufnsui()
+        {
+          
+          us(38,"visibility",0)
+          dha(dh, false, true)
+          dh(dh, "duration", 430)
+          us(38, "dh", dh)
+          us(13, "dh", dh)
+          
+          us(20,"visibility",0)
+          dhas(dh, 13, "translationY", 250,0)
+          dh(dh, "duration", 450)
+          dh(dh, "start")
+        }
+      }
+      
+      
+    }else
+    {
+    }else
+    {
+    }
+    
+    
+    
+    
+  }
+}
+else
+{
+  end()
+}
+
+
+end fn
