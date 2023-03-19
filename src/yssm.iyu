@@ -1,0 +1,137 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=17dp
+app_CardElevation=20dp
+layout_marginTop=50dp
+layout_marginBottom=50dp
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=隐私声明
+textColor=#ff000000
+textSize=18sp
+layout_marginLeft=20dp
+layout_marginRight=10dp
+layout_marginTop=15dp
+singleLine=true
+ellipsize=end</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+layout_marginTop=17dp
+layout_marginLeft=19dp
+layout_marginRight=19dp
+layout_marginBottom=17dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=请仔细阅读这个声明
+textSize=15sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="12" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=《隐私政策》
+textSize=15sp
+textColor=#ff2640d2</ppt>
+<event><eventItme type="clicki">
+hws("http://doc.cjzwjyun.cf/yszc.html")</eventItme></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="CardView">
+<ppt>width=60dp
+height=30dp
+layout_marginRight=30dp
+layout_marginTop=15dp
+layout_marginBottom=19dp
+app_CardcornerRadius=4.5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffefefe</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-1
+height=-1
+text=同意
+textSize=14sp
+textColor=#ff500f90
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+    fc("@user.jar","$user.jar",wc)
+    f(wc == "true")
+    {
+      ufnsui()
+      {
+        fn login.dl()        
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        tw("是否给予储存权限")
+      }
+    }
+
+
+java(null,ss.yszcutwv,"android.app.Dialog.dismiss")
+
+
+
+ 
+
+
+
+
+</eventItme></event>
+</View>
+<UIEventset></UIEventset>

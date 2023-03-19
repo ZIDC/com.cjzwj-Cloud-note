@@ -2,7 +2,6 @@
 
 
 
-
 //手动账号登录
 fn login()
 
@@ -104,8 +103,6 @@ dhr(dh, 90,0)
 dh(dh, "duration", 700)
 us(63, "dh", dh)
 
-end()
-uigo("mian.iyu")
 
 fn login.logobjlb()
 
@@ -193,7 +190,7 @@ t()
   
   
   hs(bjhqurl,bjhqwc, "utf-8", null, true, bjhqjg)
- 
+  
 
   
   
@@ -266,6 +263,122 @@ us(61,"visibility",8)
       //失败
     }
   }
+  
+}
+
+end fn
+
+
+
+
+
+
+
+
+
+
+fn dl()
+
+fr("$user.jar",pddl)
+json(pddl, tetx)
+json(tetx, "get", "data", jxjs)
+json(jxjs, "get", "username", admi)
+json(jxjs, "get", "userpassword", passw)
+
+t()
+{
+  ss(sss.url+"/api/Login/",login)
+  ss("username="+admi+"&password="+passw+sss.appid,apu)
+  ss(login+apu,k)
+  syso(k)
+  hs(login,apu, "utf-8", null, true, loged)
+  json(loged, jojx)
+  json(jojx, "get", "msg", wec)
+  f(wec == "登录成功")
+  {
+    ufnsui()
+    {
+      //登录成功
+      
+      fn login.logobjlb()
+      //保存重要参数
+      ss("userpassword\":\""+passw+"\",\"usertoken\"",jsonth)
+      sr(loged,"usertoken\"",jsonth,wcth)
+      fw("$user.jar", wcth)      
+      //添加笔记载入按钮动画
+      us(63,"visibility",0)
+      dhas(dh, 63, "scaleY", 0.2,1.0)
+      dh(dh, "duration", 700)
+      dh(dh, "start")
+      
+      dhas(dh, 63, "scaleX", 0.2,1.0)
+      dh(dh, "duration", 700)
+      dh(dh, "start")
+      
+      dhr(dh, 90,0)
+      dh(dh, "duration", 700)
+      us(63, "dh", dh)
+      
+      
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //登录失败
+tw(wec)            
+
+fn login.logobjlb()
+
+     
+      //登录根布局
+      us(3,"visibility",0)
+      
+      
+      //登录背景布局显示
+      us(8,"visibility",0)
+      dha(dh, false, true)
+      dh(dh, "duration", 480)
+      us(8, "dh", dh)
+      
+      //登录卡片布局显示
+      dhas(dh, 6, "translationY", 500,0)
+      dh(dh, "duration", 550)
+      dh(dh, "start")
+      us(6,"visibility",0)
+      dha(dh, false, true)
+      dh(dh, "duration", 650)
+      us(6, "dh", dh)
+      
+      //首次载入动画
+      dha(dh, false, true)
+      dh(dh, "duration", 430)
+      us(13, "dh", dh)
+      us(9, "dh", dh)
+      us(11, "dh", dh)
+      us(20,"visibility",0)
+      dhas(dh, 13, "translationY", 250,0)
+      dh(dh, "duration", 470)
+      dh(dh, "start")
+      
+      dhas(dh, 9, "translationY", -80,0)
+      dh(dh, "duration", 500)
+      dh(dh, "start")
+      
+      dhas(dh, 11, "translationY", -80,0)
+      dh(dh, "duration", 470)
+      dh(dh, "start")
+      
+      
+      
+    }
+  }
+  
+  
+  
+  
   
 }
 

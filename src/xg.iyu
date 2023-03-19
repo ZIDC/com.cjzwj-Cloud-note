@@ -190,7 +190,8 @@ hint=
 textColor=#ff2f2f2f
 typeface=@MiSans-Normal.ttf
 textSize=17sp
-background=@</ppt>
+background=@
+</ppt>
 <event></event>
 </View>
 <View id="15" did="10" type="CardView">
