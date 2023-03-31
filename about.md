@@ -1,4 +1,5 @@
-<a id="顶部"></a> 
+<a id="顶部"></a>
+ 
 <br> <div align=center>
 <big><strong>关于</strong></big><br><br>
   <img src="https://raw.githubusercontent.com/ZIDC/com.cjzwj-Cloud-note/main/预览/7389C2D4-58CD-41CD-AD9E-84122E12925E.png" width=58 height=58>
@@ -28,9 +29,8 @@
 <b>简介</b>
 
 ###### 云笔记是一款，云储存纯文本记录工具使用了简单易懂的脚本语言开发  
-
+> [云 · 便签 官网](https://doc.cjzwjyun.cf)
 ###### 
-
 > 2023年3月6号开始开发  
 
 > 2023年3月12日发布初版（仅有登录注册添加/修改笔记功能  ）
