@@ -211,10 +211,7 @@ orientation=horizontal
 gravity=left|center
 background=selectableitem
 clickable=true</ppt>
-<event><eventItme type="clicki">
-
-
-//6标题
+<event><eventItme type="clicki">//6标题
 //21内容
 //20密码
 ug(6,"text",ss.tjbt)
@@ -225,26 +222,30 @@ f(mima == "")
 {
   ufnsui()
   {
-  
-  ss("&content="+bjtj+"\",\"powif\": \"(false)&lt;&gt;",ss.bjtjnr)
-  fn tjOrbj.添加()
-  sss 添加笔记 = "true"
-  end()
-}
+    //无源密码
+    
+    ss("&content="+bjtj,ss.bjtjnr)
+    fn tjOrbj.添加()
+    sss 添加笔记 = "true"
+    end()
+    
+  }
 }
 else
 {
   ufnsui()
   {
-  ss("&content="+bjtj+"\",\"powif\": \"(true)&lt;"+mima+"&gt;",ss.bjtjnr)
+    //添加密码
+    
+    
+    ss("[密码"+mima+"密码]",xgmmnrno)
+    ss("&content="+bjtj+xgmmnrno,ss.bjtjnr)
     fn tjOrbj.添加()
-  sss 添加笔记 = "true"
+    sss 添加笔记 = "true"
     end()
+    
   }
-}
-
-
-</eventItme></event>
+}</eventItme></event>
 </View>
 <View id="13" did="12" type="ImageView">
 <ppt>width=40dp
@@ -279,69 +280,74 @@ java(null,cs,"android.view.Window.addFlags","int","67108864")
 
 
 
-ss 添加内容密码框 = "false"</eventItme><eventItme type="downkey">
-ug(6,"text",hqbt)
+ss 添加内容密码框 = "false"</eventItme><eventItme type="downkey">ug(6,"text",hqbt)
 f(st_kC == "4")
 {
   ufnsui()
   {
     //判断内容是否空
-
     
-f(hqbt == "")
-{
-//空
-    end()
-    sss 添加笔记 = "null"
     
-  }
-  else
-  {
-    ufnsui()
+    f(hqbt == "")
     {
-      //有内容
-
-
-//返回保存
-//6标题
-//21内容
-//20密码
-ug(6,"text",ss.tjbt)
-ug(21,"text",bjtj)
-ug(20,"text",mima)
-
-f(mima == "")
-{
-  ufnsui()
-  {
-  
-  ss("&content="+bjtj+"\",\"powif\": \"(false)&lt;&gt;",ss.bjtjnr)
-  fn tjOrbj.添加()
-  sss 添加笔记 = "true"
-  end()
-}
-}
-else
-{
-  ufnsui()
-  {
-  ss("&content="+bjtj+"\",\"powif\": \"(true)&lt;"+mima+"&gt;",ss.bjtjnr)
-    fn tjOrbj.添加()
-    sss 添加笔记 = "true"
-    end()
-  }
-}
-
-
-    
+      //空
+      end()
+      sss 添加笔记 = "null"
       
-      
-      
-            
     }
-
-
-    
-  }
-}
-}</eventItme></UIEventset>
+    else
+    {
+      ufnsui()
+      {
+        //有内容
+        
+        
+        //返回保存
+        //6标题
+        //21内容
+        //20密码
+        ug(6,"text",ss.tjbt)
+        ug(21,"text",bjtj)
+        ug(20,"text",mima)
+        
+        f(mima == "")
+        {
+          ufnsui()
+          {
+            //无源密码
+            
+            ss("&content="+bjtj,ss.bjtjnr)
+            fn tjOrbj.添加()
+            sss 添加笔记 = "true"
+            end()
+            
+            
+          }
+        }
+        else
+        {
+          ufnsui()
+          {
+            //添加密码
+              
+              ss("[密码"+mima+"密码]",xgmmnrno)
+              ss("&content="+bjtj+xgmmnrno,ss.bjtjnr)
+              fn tjOrbj.添加()
+              sss 添加笔记 = "true"
+              end()
+              
+            }
+          }
+          
+          
+          
+          
+          
+          
+        }
+        
+        
+        
+      }
+    }
+  }</eventItme></UIEventset>

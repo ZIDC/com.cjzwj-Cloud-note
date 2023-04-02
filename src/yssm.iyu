@@ -32,7 +32,7 @@ gravity=left|center</ppt>
 <View id="5" did="4" type="TextView">
 <ppt>width=-2
 height=-2
-text=隐私声明
+text=隐私政策
 textColor=#ff000000
 textSize=18sp
 layout_marginLeft=20dp
@@ -45,7 +45,7 @@ ellipsize=end</ppt>
 <View id="6" did="3" type="LinearLayout">
 <ppt>width=-1
 height=-2
-orientation=horizontal
+orientation=vertical
 layout_marginTop=17dp
 layout_marginLeft=19dp
 layout_marginRight=19dp
@@ -55,8 +55,8 @@ layout_marginBottom=17dp</ppt>
 <View id="7" did="6" type="TextView">
 <ppt>width=-2
 height=-2
-text=请仔细阅读这个声明
-textSize=15sp
+text=请你务必审慎阅读、充分理解“隐私政策”各条款。\n\n为了向你提供账号登录、便签记录，本应用需要你提供少量个人信息，详细可点击  《隐私政策》  进行了解。
+textSize=13sp
 textColor=#ff000000</ppt>
 <event></event>
 </View>
@@ -67,14 +67,57 @@ text=《隐私政策》
 textSize=15sp
 textColor=#ff2640d2</ppt>
 <event><eventItme type="clicki">
-hws("http://doc.cjzwjyun.cf/yszc.html")</eventItme></event>
+
+
+
+
+uigo("隐私协议.iyu")
+//hws("https://github.com/ZIDC/com.cjzwj-Cloud-note/blob/Preview/yssm.md")</eventItme></event>
+</View>
+<View id="13" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=如你同意，请点击“同意”开始使用服务。
+textSize=13sp
+textColor=#ff000000</ppt>
+<event></event>
 </View>
 <View id="8" did="3" type="LinearLayout">
 <ppt>width=-1
 height=-2
-orientation=vertical
+orientation=horizontal
 gravity=right|center</ppt>
 <event></event>
+</View>
+<View id="14" did="8" type="CardView">
+<ppt>width=60dp
+height=30dp
+layout_marginRight=10dp
+layout_marginTop=15dp
+layout_marginBottom=19dp
+app_CardcornerRadius=4.5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffefefe</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-1
+height=-1
+text=不同意
+textSize=14sp
+textColor=#ffaeaeae
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">end()
+</eventItme></event>
 </View>
 <View id="9" did="8" type="CardView">
 <ppt>width=60dp

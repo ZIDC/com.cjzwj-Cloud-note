@@ -43,100 +43,51 @@ height=-1
 orientation=vertical
 background=selectableitem
 clickable=true</ppt>
-<event><eventItme type="clicki">ulag(st_vW,12,sss.文章id)
-ulag(st_vW,7,jm)
-ulag(st_vW,11,ss.mmtx)
+<event><eventItme type="clicki">ulag(st_vW,12,文章id)
 
-//20设置文章密码编辑框
-//15设置文章密码卡片布局
-//21内容编辑框
-//1修改内容主布局
-//9修改卡片主布局
-//6文章标题
-////密码
 
-f(jm == "本篇·笔记纯文本已经加密")
+us(8,"visibility",8)
+us(9,"visibility",0)
+t()
 {
+  ss(sss.url+"/api/getNotes",cs)
+  ss("appid=10000&id="+文章id,csj)
   
-    
-ss 修改内容密码框 = "false"
-s iyu ="mm.iyu"
-s bln ="true"
-javanew(ss.mmutwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
-nvw(111,111,"相对布局","width=-1\nheight=-1",ss.mm载体)
-addv(ss.mm载体,iyu)
-java(null,ss.mmutwv,"android.app.Dialog.setContentView","android.view.View",ss.mm载体)
-java(hq,ss.mmutwv,"android.app.Dialog.getWindow")
-java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
-
-java(null,ss.mmutwv,"android.app.Dialog.setCancelable","boolean",bln)
-java(null,ss.mmutwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
-java(null,ss.mmutwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
-{
-java(null,ss.mmutwv,"android.app.Dialog.dismiss")  
-}
-java(null,ss.mmutwv,"android.app.Dialog.show")
-
-
-//验证密码
-
-gvs(ss.mm载体,"mm.14",ss.mmmm)
-gvs(ss.mm载体,"mm.17",ss.mmzcan)
-gvs(ss.mm载体,"mm.18",ss.mmjz)
-
-  
-}
-else
-{
-  ufnsui()
+  hs(cs,csj, "utf-8", null, true, scjsc)
+  json(scjsc, jojx)
+  json(jojx, "get", "msg", wec)
+  json(jojx, "get", "data", jjh)
+  f(wec == "ok")
   {
-    ss 修改内容密码框 = "false"
-uigo("xg.iyu")
+    ufnsui()
+    {
+      
+      
+      json(jjh, "get", "content", nr)
+      
+      fr("@Markdown/doc.html",dq)
+      
+      sr(dq,"写入笔记预览的真实内容",nr,xrwc)
+      fw("%storage/emulated/0/Android/data/com.ZIDCjsb/.mk/doc.html",xrwc)
+      uigo("doc_ll.iyu")
+      us(8,"visibility",0)
+      us(9,"visibility",8)
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+      us(8,"visibility",0)
+      us(9,"visibility",8)
+      tw(wec)
+    }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//us(xg.1,"visibility",0)
-/.us(xg.9,"app_cardcornerradius","16dp")
-dha(dh, false, true)
-dh(dh, "duration", 500)
-us(xg.1, "dh", dh)
-
-
-dhas(dh, xg.1, "scaleY", 0.8,1.0)
-dh(dh, "duration", 460)
-dh(dh, "start")
-dhas(dh, xg.1, "scaleX", 0.8,1.0)
-dh(dh, "duration", 460)
-dh(dh, "start")
-
-
-dhas(dh, xg.1, "translationY", 170,0)
-dh(dh, "duration", 460)
-dh(dh, "start")
-dhon(dh)
-{
-  us(xg.9,"app_cardcornerradius","0dp")
-}
-else
-{
-}
-else
-{
-}
-./
-</eventItme></event>
+}</eventItme></event>
 </View>
 <View id="4" did="3" type="LinearLayout">
 <ppt>width=-1
@@ -167,7 +118,7 @@ gravity=left|center</ppt>
 <View id="7" did="8" type="TextView">
 <ppt>width=-2
 height=-2
-text=英语缩略词“ANNOUNCE”经常作为“Announcement”的缩写来使用，中文表示：“公告”。本文将详细介绍英语缩写词ANNOUNCE所代表英文单词，其对应的中文拼音、详细解释以及在英语中的流行度。此外，还有关于缩略词ANNOUNCE的分类、应用领域及相关应用示例等。英文缩写ANNOUNC英文单词：Announcement缩写词中文简要解释：公告中文拼音：gōng gào缩写词分类：Miscellaneou缩写词领域：-1以上为Announcement英文缩略词ANNOUNCE的中文解释，以及该英文缩写在英语的流行度、分类和应用领域方面的信息。
+text=请点击查看
 textSize=13sp
 textColor=#ff666666
 layout_marginLeft=15.5dp

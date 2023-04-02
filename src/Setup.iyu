@@ -1,0 +1,446 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FFF7F7F7</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=left|center
+layout_marginBottom=25dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=设置
+textSize=34sp
+textColor=#ff000000
+typeface=@MiSans-Normal.ttf
+layout_marginLeft=28dp</ppt>
+<event></event>
+</View>
+<View id="7" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-1
+height=54dp
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+uigo("隐私协议.iyu")</eventItme></event>
+</View>
+<View id="20" did="14" type="TextView">
+<ppt>width=-2
+height=-1
+text=查看 《便签》隐私政策
+gravity=left|center
+textSize=15sp
+textColor=#ff000000
+layout_marginLeft=18dp
+typeface=@MiSans-Normal.ttf</ppt>
+<event></event>
+</View>
+<View id="15" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="CardView">
+<ppt>width=-1
+height=54dp
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event><eventItme type="clicki">uigo("doc_list.iyu")</eventItme></event>
+</View>
+<View id="21" did="19" type="TextView">
+<ppt>width=-2
+height=-1
+text=使用说明文档
+gravity=left|center
+textSize=15sp
+textColor=#ff000000
+layout_marginLeft=18dp
+typeface=@MiSans-Normal.ttf</ppt>
+<event></event>
+</View>
+<View id="35" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="CardView">
+<ppt>width=-1
+height=54dp
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="37" did="36" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="39" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+s iyu ="czmm1.iyu"
+s bln ="true"
+javanew(ss.czmm1utwv,"androidx.appcompat.app.AppCompatDialog","Context",activity)
+nvw(111,111,"相对布局","width=-1\nheight=-1",ss.czmm1载体)
+addv(ss.czmm1载体,iyu)
+java(null,ss.czmm1utwv,"android.app.Dialog.setContentView","android.view.View",ss.czmm1载体)
+java(hq,ss.czmm1utwv,"android.app.Dialog.getWindow")
+java(null,hq,"android.view.Window.setBackgroundDrawableResource","int",17170445)
+
+java(null,ss.czmm1utwv,"android.app.Dialog.setCancelable","boolean",bln)
+java(null,ss.czmm1utwv,"android.app.Dialog.setCanceledOnTouchOutside","boolean",bln)
+java(null,ss.czmm1utwv,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null)
+{
+java(null,ss.czmm1utwv,"android.app.Dialog.dismiss")  
+}
+java(null,ss.czmm1utwv,"android.app.Dialog.show")
+
+
+//修改密码弹窗
+gvs(ss.czmm1载体,"czmm1.9",ss.czmm1yhm)
+gvs(ss.czmm1载体,"czmm1.14",ss.czmm1mm)
+gvs(ss.czmm1载体,"czmm1.17",ss.czmm1zcan)
+gvs(ss.czmm1载体,"czmm1.18",ss.czmm1jz)
+</eventItme></event>
+</View>
+<View id="40" did="39" type="TextView">
+<ppt>width=-2
+height=-1
+text=修改便签密码
+gravity=left|center
+textSize=15sp
+textColor=#ff000000
+layout_marginLeft=18dp
+typeface=@MiSans-Normal.ttf</ppt>
+<event></event>
+</View>
+<View id="22" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="CardView">
+<ppt>width=-1
+height=54dp
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="25" did="24" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=left|center</ppt>
+<event><eventItme type="clicki">
+
+us(27,"visibility",8)
+us(41,"visibility",0)
+t()
+{
+  hs("https://raw.githubusercontent.com/ZIDC/com.cjzwj-Cloud-note/Preview/about.md",ab)
+
+  f(ab == null)
+  {
+    ufnsui()
+    {
+      //网络错误
+us(27,"visibility",0)
+us(41,"visibility",8)      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+us(27,"visibility",0)
+us(41,"visibility",8)
+    fr("@Markdown/Markdown.html",dq)
+    sr(dq,"写入笔记预览的真实内容",ab,xrwc)
+    fw("%storage/emulated/0/Android/data/com.ZIDCjsb/.mk/about.html",xrwc)
+    uigo("about.iyu")
+    }
+  }
+}
+
+</eventItme></event>
+</View>
+<View id="27" did="26" type="TextView">
+<ppt>width=-2
+height=-1
+text=关于本软件
+gravity=left|center
+textSize=15sp
+textColor=#ff000000
+layout_marginLeft=18dp
+typeface=@MiSans-Normal.ttf</ppt>
+<event></event>
+</View>
+<View id="41" did="26" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842874
+visibility=gone
+layout_marginLeft=18dp</ppt>
+<event></event>
+</View>
+<View id="28" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="CardView">
+<ppt>width=-1
+height=54dp
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="32" did="31" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+hws("https://github.com/ZIDC/com.cjzwj-Cloud-note")</eventItme></event>
+</View>
+<View id="34" did="32" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@01f7ccb8ee7c7d1c393881887168738b..png
+layout_marginLeft=18dp</ppt>
+<event></event>
+</View>
+<View id="33" did="32" type="TextView">
+<ppt>width=-2
+height=-1
+text=GitHub 地址
+gravity=left|center
+textSize=15sp
+textColor=#ff000000
+layout_marginLeft=5dp
+typeface=@MiSans-Normal.ttf</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(2,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+
+
+us(3,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 450)
+us(3, "dh", dh)
+
+
+dhas(dh, 3, "translationY", 280,0)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+</eventItme><eventItme type="downkey">
+
+
+
+
+
+dhas(dh, 3, "translationY", 0,280)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+dha(dh, true, false)
+dh(dh, "duration", 450)
+us(3, "dh", dh)
+dhon(dh)
+{
+us(3,"visibility",0)
+}
+
+
+end()</eventItme></UIEventset>

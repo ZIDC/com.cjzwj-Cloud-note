@@ -31,8 +31,7 @@ gravity=left|center</ppt>
 <ppt>width=-2
 height=-2
 text=注册
-typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
-textSize=20sp
+textSize=18sp
 textColor=#ff000000
 layout_marginLeft=20dp
 layout_marginTop=20dp</ppt>
@@ -156,14 +155,14 @@ text=邮箱:
 layout_marginLeft=15dp
 layout_marginRight=8dp
 textSize=16sp
-textColor=#ff972020</ppt>
+textColor=#ff000000</ppt>
 <event></event>
 </View>
 <View id="22" did="20" type="EditText">
 <ppt>width=-1
 height=-1
 text=
-hint=适应于: 无法找回/修改密码
+hint=非必填: 修改密码
 textSize=10sp
 textColorHint=#ff6c6c6c
 background=@

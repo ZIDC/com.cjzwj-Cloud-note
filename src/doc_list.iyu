@@ -1,0 +1,146 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FFF7F7F7</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=left|center
+layout_marginBottom=25dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=文档
+textSize=34sp
+textColor=#ff000000
+typeface=@MiSans-Normal.ttf
+layout_marginLeft=28dp</ppt>
+<event></event>
+</View>
+<View id="10" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="10" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="9" did="10" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842874</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(2,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+gvs(4,wv)
+
+us(8,"visibility",8)
+us(9,"visibility",0)
+json(usi, "get", "username",name)
+ss("appid=10000&userid=11&username=about&limit=100000&page=1"+,bjhqwc)
+ss("http://bj.cjzwjyun.cf:2022"+"/api/Noteslist",bjhqurl)
+t()
+{
+  
+  
+  hs(bjhqurl,bjhqwc, "utf-8", null, true, bjhqjg) 
+  json(bjhqjg, jojx)
+  json(jojx, "list", "data", list)
+  json(jojx, "get", "code", zto)
+  json(list, "size", size)
+  f(zto == "200")
+  {
+    ufnsui()
+    {
+    
+    
+      //成功
+//打印json数据
+w(size &gt; 0)
+{
+s-(1, size)
+json(list, "data", size, item)
+//获取id
+json(item, "get", "id", id)
+json(item, "get", "title", title)
+json(item, "get", "content", content)
+json(item, "get", "creattime", creattime)
+json(item, "get", "updatetime", updatetime)
+
+
+ula(ss.list,5=title,12=id)     
+    }
+    ufnsui()
+    {
+uls(8,ss.list,"doc_list_lb.iyu",-1,-2)
+gvs(8,对象)
+      cls("android.support.v7.widget.RecyclerView",列表类)
+      cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+      javanew(布局,布局管理类,"int",4,"int",1)
+      javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局) 
+//列表提示主布局
+
+us(8,"visibility",0)
+us(9,"visibility",8)
+     
+      
+}      
+      
+      
+      
+    
+  }
+  }
+  else
+  {
+    ufnsui()
+    {
+            tw(zto)
+            us(8,"visibility",8)
+us(9,"visibility",0)
+      //失败
+    }
+  }
+  
+}
+</eventItme></UIEventset>

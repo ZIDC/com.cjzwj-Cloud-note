@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"></script>
+  <!-- https://cdnjs.com/libraries/marked -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+  
+  <!-- https://cdnjs.com/libraries/github-markdown-css -->
+  <style>
+
+@media (max-width: 767px) { body { padding: 15px; } }
+body { box-sizing: border-box;
+       min-width: 200px;
+       max-width: 980px;
+       margin: 0 auto;
+       padding: 45px; }
+  </style>
+  <title>Markdown</title>
+</head>
+<body>
+  <div id="$m" class="markdown-body"></div>
+  <textarea id="$t" style="display:none">
+  写入笔记预览的真实内容
+  </textarea>
+    <script>$m.innerHTML = marked.parse($t.value);</script>
+</body>
+</html>

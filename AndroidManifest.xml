@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <title>便签</title>
 <icon>icon.png</icon>
-<packageName>com.ybj</packageName>
-<versionName>4.01</versionName>
+<packageName>com.ZIDCjsb</packageName>
+<versionName>4.02</versionName>
 <versionint>2023</versionint>
 <sdk>24</sdk>
 <yuv>3</yuv>

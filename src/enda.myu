@@ -4,11 +4,43 @@
 fn en()
 
 
-ug(33,"visibility",dlkj)
+
+ug(3,"visibility",dlkj)
 f(dlkj == "0")
 {
   ufnsui()
   {
+fn enda.ena()    
+    
+  }
+}
+else
+{
+  end()
+}
+
+
+end fn
+
+
+
+fn ena()
+
+ug(21,"visibility",dll)
+ug(33,"visibility",dla)
+f(dll == "8")
+{
+  end()
+}
+f(dla == "8")
+{
+  end()
+}
+else
+{
+  ufnsui()
+  {
+    
         
     dha(dh, true, false)
     dh(dh, "duration", 430)
@@ -54,10 +86,10 @@ f(dlkj == "0")
       us(28,"visibility",8)
       
       us(21,"visibility",8)
-      us(33,"visibility",8)
+
       us(19,"text","")
       us(21,"text","")
-      
+      us(33,"visibility",8)   
       
       t()
       {
@@ -75,12 +107,17 @@ f(dlkj == "0")
           dhas(dh, 13, "translationY", 250,0)
           dh(dh, "duration", 450)
           dh(dh, "start")
+          dhon(dh)
+          {
+//                us(3,"visibility",8)  
+            }
         }
       }
-      
+
       
     }else
     {
+ 
     }else
     {
     }
@@ -88,12 +125,8 @@ f(dlkj == "0")
     
     
     
+    
   }
 }
-else
-{
-  end()
-}
-
 
 end fn

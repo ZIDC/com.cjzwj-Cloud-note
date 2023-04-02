@@ -30,7 +30,7 @@ gravity=left|center</ppt>
 <View id="5" did="4" type="TextView">
 <ppt>width=-2
 height=-2
-text=找回密码
+text=修改密码
 textSize=18sp
 textColor=#ff000000
 layout_marginLeft=20dp
@@ -65,7 +65,7 @@ gravity=left|center</ppt>
 <View id="10" did="8" type="TextView">
 <ppt>width=-2
 height=-2
-text=账号
+text=旧密码
 layout_marginLeft=15dp
 layout_marginRight=8dp
 textSize=16sp
@@ -76,7 +76,7 @@ textColor=#ff000000</ppt>
 <ppt>width=-1
 height=-1
 text=
-hint=请输入账号/用户名
+hint=请输入旧密码
 textSize=13sp
 textColorHint=#ff6c6c6c
 background=@
@@ -108,7 +108,7 @@ gravity=left|center</ppt>
 <View id="13" did="12" type="TextView">
 <ppt>width=-2
 height=-2
-text=密码
+text=新密码
 layout_marginLeft=15dp
 layout_marginRight=8dp
 textSize=16sp
@@ -119,7 +119,7 @@ textColor=#ff000000</ppt>
 <ppt>width=-1
 height=-1
 text=
-hint=请输入密码
+hint=请输入新密码
 textSize=13sp
 textColorHint=#ff6c6c6c
 background=@
@@ -127,153 +127,6 @@ textColor=#ff000000
 imeOptions=actionnext
 inputType=textcapcharacters
 paddingRight=80dp</ppt>
-<event></event>
-</View>
-<View id="23" did="11" type="LinearLayout">
-<ppt>width=-1
-height=-1
-orientation=horizontal
-gravity=right</ppt>
-<event></event>
-</View>
-<View id="24" did="23" type="CardView">
-<ppt>width=50dp
-height=-1
-app_CardcornerRadius=4dp
-app_CardElevation=0dp
-layout_marginTop=8dp
-layout_marginBottom=8dp
-app_CardBackgroundColor=#ffe8e8e8
-layout_marginRight=15dp</ppt>
-<event></event>
-</View>
-<View id="25" did="24" type="LinearLayout">
-<ppt>width=-1
-height=-1
-orientation=vertical
-gravity=center</ppt>
-<event></event>
-</View>
-<View id="27" did="25" type="CardView">
-<ppt>width=-1
-height=-1
-app_CardcornerRadius=4dp
-app_CardElevation=0dp
-layout_margin=0.3dp</ppt>
-<event></event>
-</View>
-<View id="28" did="27" type="LinearLayout">
-<ppt>width=-1
-height=-1
-orientation=vertical
-gravity=center</ppt>
-<event></event>
-</View>
-<View id="26" did="28" type="TextView">
-<ppt>width=-1
-height=-1
-text=验证码
-gravity=center
-textSize=10sp
-textColor=#ff575757
-background=selectableitem
-clickable=true</ppt>
-<event><eventItme type="clicki">
-
-//9注册账号编辑框
-//14注册密码编辑框
-//17注册按钮
-//18注册加载圈
-//26发送验证码按钮
-//29发送邮箱冷却
-gvs(ss.czmm载体,"czmm.26",ss.czmmyz)
-gvs(ss.czmm载体,"czmm.29",ss.czmmyzm)
-
-ug(ss.czmmyhm,"text",czmmname)
-us(ss.czmmyz,"visibility",8)
-us(ss.czmmyzm,"visibility",0)
-
-
-
-
-t()
-{
-  ss(sss.url+"/api/GetPasswordCode",yzmu)
-  ss("username="+czmmname+"&appid="+sss.appld,yzm)
-  hs(yzmu,yzm, "utf-8", null, true, yzmed)
-  json(yzmed, jojx)
-  json(jojx, "get", "msg", yzmwc)
-  f(yzmwc == "邮件发送成功")
-  {
-    ufnsui()
-    {
-      //成功
-
-tw(yzmwc)     
-            
-    }
-    
-  }
-  else
-  {
-    ufnsui()
-    {
-      //失败
-
-      tw(yzmwc)
-      us(ss.czmmyzm,"visibility",8)
-us(ss.czmmyz,"visibility",0)
-    }
-  }  
-  
-}
-
-
-
-
-
-//倒计时开始
-t()
-{
-ss("30s",b)
-ufnsui()
-{
-us(ss.czmmyzm,"text",b)
-}
-s a=30
-for(1;30)
-{
-f(a==1)
-{
-//这里可添加其它代码
-ufnsui()
-{
-
-//倒计时完成
-us(ss.czmmyzm,"visibility",8)
-us(ss.czmmyz,"visibility",0)
-}
-endcode
-}
-s(a-1,a)
-ss(a+"s",c)
-ufnsui()
-{
-us(ss.czmmyzm,"text",c)
-}
-stop(1000)
-}
-}      
-//倒计时开始</eventItme></event>
-</View>
-<View id="29" did="28" type="TextView">
-<ppt>width=-1
-height=-1
-text=秒
-gravity=center
-textSize=10sp
-textColor=#ff575757
-</ppt>
 <event></event>
 </View>
 <View id="19" did="6" type="CardView">
@@ -320,55 +173,6 @@ inputType=textcapcharacters
 paddingRight=83dp</ppt>
 <event></event>
 </View>
-<View id="34" did="6" type="LinearLayout">
-<ppt>width=-1
-height=-2
-orientation=vertical
-gravity=right|center</ppt>
-<event></event>
-</View>
-<View id="30" did="34" type="CardView">
-<ppt>width=180dp
-height=45.3dp
-app_CardElevation=0dp
-app_CardcornerRadius=6dp
-layout_marginRight=50dp
-app_CardBackgroundColor=#fffbfbfb
-layout_marginTop=5dp
-layout_marginBottom=18dp</ppt>
-<event></event>
-</View>
-<View id="31" did="30" type="LinearLayout">
-<ppt>width=-1
-height=-1
-orientation=horizontal
-gravity=left|center</ppt>
-<event></event>
-</View>
-<View id="32" did="31" type="TextView">
-<ppt>width=-2
-height=-2
-text=验证码
-layout_marginLeft=15dp
-layout_marginRight=8dp
-textSize=16sp
-textColor=#ff000000</ppt>
-<event></event>
-</View>
-<View id="33" did="31" type="EditText">
-<ppt>width=-1
-height=-1
-text=
-hint=填写验证码
-textSize=13sp
-textColorHint=#ff6c6c6c
-background=@
-textColor=#ff000000
-imeOptions=actionnext
-inputType=textcapcharacters
-paddingRight=15dp</ppt>
-<event></event>
-</View>
 <View id="15" did="6" type="CardView">
 <ppt>width=-1
 height=45dp
@@ -399,21 +203,26 @@ background=selectableitem
 clickable=true</ppt>
 <event><eventItme type="clicki">
 
-ug(ss.czmmyhm,"text",czmmname)
-ug(ss.czmmmm,"text",czmmmm)
-ug(ss.czmmyx,"text",czmmeml)
-ug(ss.czmmyxyzm,"text",czmmyxyzm)
+ug(ss.czmm1yhm,"text",czmmoldname)
+ug(ss.czmm1mm,"text",czmmnmm)
 
-us(ss.czmmzcan,"visibility",8)
-us(ss.czmmjz,"visibility",0)
+
+us(ss.czmm1zcan,"visibility",8)
+us(ss.czmm1jz,"visibility",0)
 
 
 
 
 t()
 {
-  ss(sss.url+"/api/GetPassword",czmm)
-  ss("username="+czmmname+"&password="+czmmmm+"&appid="+sss.appld+"&code="+czmmyxyzm,zcs)
+  fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username",name)
+json(usi, "get", "usertoken",usertoken)
+  ss(sss.url+"/api/UpdatePassword",czmm)
+  ss("&appid="+sss.appld+"username="+name+"&id="+usid+"&usertoken="+usertoken+"&oldpwd="+czmmoldname+"&newpwd="+czmmnmm,zcs)
   hs(czmm,zcs, "utf-8", null, true, zced)
   json(zced, jojx)
   json(jojx, "get", "msg", xgwc)
@@ -422,10 +231,11 @@ t()
     ufnsui()
     {
       //成功
-      us(ss.czmmzcan,"visibility",0)
-      us(ss.czmmjz,"visibility",8)
-      tw(xgwc)
-      java(null,ss.czmmutwv,"android.app.Dialog.dismiss")
+      us(ss.czmm1zcan,"visibility",0)
+      us(ss.czmm1jz,"visibility",8)
+      ss(xgwc+"请重新登录，部分功能将无法使用",ts)
+      tw(ts)
+      java(null,ss.czmm1utwv,"android.app.Dialog.dismiss")
       
     }
     
@@ -435,8 +245,8 @@ t()
     ufnsui()
     {
       //失败
-      us(ss.czmmzcan,"visibility",0)
-      us(ss.czmmjz,"visibility",8)
+      us(ss.czmm1zcan,"visibility",0)
+      us(ss.czmm1jz,"visibility",8)
       tw(xgwc)
     }
   }  

@@ -59,7 +59,8 @@ orientation=vertical
 gravity=center
 background=selectableitem
 clickable=true</ppt>
-<event></event>
+<event><eventItme type="clicki">
+uigo("Setup.iyu")</eventItme></event>
 </View>
 <View id="54" did="56" type="ImageView">
 <ppt>width=23dp
@@ -911,7 +912,7 @@ layout_marginRight=5dp</ppt>
 //61笔记加载圈
 //63添加笔记
 
-
+//fn Grabbag.bao()
 s a = "pxztl"
 swh(a, h)
 s px = h
@@ -926,9 +927,13 @@ java(null,cs,"android.view.Window.addFlags","int","67108864")
 
 
 //重要配置
-sss url="url"
+sss url="http://bj.cjzwjyun.cf:2022"
 ss("&appid=10000&device=123",sss.appid)
 sss appld="10000"
+
+
+
+
 
 //addv(1,"xg.iyu")
 //us(xg.3,"height",skk)
@@ -1032,7 +1037,9 @@ f(st_kC == "4")
   ufnsui()
   {
 
-      fn enda.en()
+      
+fn enda.en()
+      
   }
 }
 
@@ -1151,6 +1158,9 @@ t()
 }
 
 //检查更新</eventItme><eventItme type="resume">
+//判断抓包
+//fn Grabbag.bao()
+
 f(sss.添加笔记 == "true")
 {
   ufnsui()

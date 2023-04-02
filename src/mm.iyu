@@ -32,8 +32,7 @@ layout_marginTop=5dp</ppt>
 <ppt>width=-2
 height=-2
 text=访问需要密码
-typeface=@XiaoKeNaiLaoTiShangYongMianFei@QingKeZiTi-2.ttf
-textSize=20sp
+textSize=16sp
 textColor=#ff000000
 layout_marginLeft=20dp
 layout_marginTop=20dp</ppt>
@@ -50,8 +49,8 @@ orientation=vertical</ppt>
 height=45.3dp
 app_CardElevation=0dp
 app_CardcornerRadius=6dp
-layout_marginLeft=50dp
-layout_marginRight=50dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
 app_CardBackgroundColor=#fffbfbfb
 layout_marginTop=25dp
 layout_marginBottom=18dp</ppt>
@@ -121,7 +120,7 @@ clickable=true</ppt>
 ug(ss.mmmm,"text",passw)
 
 //先验证本地密码
-f(passw == ss.jmmm)
+f(passw == ss.mmtx)
 {
   ufnsui()
   {
@@ -200,7 +199,9 @@ style=16842874
 visibility=gone</ppt>
 <event></event>
 </View>
-<UIEventset><eventItme type="loading">
+<UIEventset><eventItme type="loading">//检查更新
+
+
 
 
 //9注册账号编辑框

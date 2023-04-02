@@ -194,20 +194,19 @@ t()
 
   
   
-fr("@j",kl)  
-  
-  sr(bjhqjg,kl,"",ok) 
-  json(ok, jojx)
+
+  json(bjhqjg, jojx)
+  json(jojx, "list", "data", list)
   json(jojx, "get", "code", zto)
+  json(list, "size", size)
   f(zto == "200")
   {
     ufnsui()
     {
+    
+    
       //成功
-json(jojx, jo)
 //打印json数据
-json(jo, "list", "data", list)
-json(list, "size", size)
 w(size &gt; 0)
 {
 s-(1, size)
@@ -218,16 +217,16 @@ json(item, "get", "title", title)
 json(item, "get", "content", content)
 json(item, "get", "creattime", creattime)
 json(item, "get", "updatetime", updatetime)
-json(item, "get", "powif", mima)
-sj(mima,"(",")",fla)
-f(fla == false)
+sj(item,"[密码","密码]",mima)
+f(mima == null)
 {
 }
 else
 {
     
-  s content="加密"
+  s content="本篇·笔记纯文本已经加密"
 }
+
 
 
 ula(ss.list,5=title,7=content,11=mima,12=id)     
@@ -253,7 +252,8 @@ us(61,"visibility",8)
       
       
       
-    }
+    
+  }
   }
   else
   {
@@ -290,7 +290,6 @@ t()
   ss(sss.url+"/api/Login/",login)
   ss("username="+admi+"&password="+passw+sss.appid,apu)
   ss(login+apu,k)
-  syso(k)
   hs(login,apu, "utf-8", null, true, loged)
   json(loged, jojx)
   json(jojx, "get", "msg", wec)

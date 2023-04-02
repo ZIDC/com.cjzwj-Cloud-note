@@ -1,5 +1,3 @@
-
-
 fn 添加()
 
 fr("$user.jar", yhpz)
@@ -14,27 +12,27 @@ ss(sss.url+"/api/addNotes",bjtjurl)
 t()
 {
   hs(bjtjurl,bjtjwc, "utf-8", null, true, bjtjfh)
-  json(bjtjfh, jojx)
-json(jojx, "get", "msg", bjtjzt)
-f(bjtjzt == "添加完成")
-{
-  ufnsui()
+  json(bjtjfh, jojx)  
+  json(jojx, "get", "msg", bjtjzt)
+  f(bjtjzt == "添加完成")
   {
-    //完成
-//    fn login.logobjlb()
+    ufnsui()
+    {
+      //完成
+      //    fn login.logobjlb()
+    }
   }
-}
-else
-{
-  ufnsui()
+  else
   {
-    //失败
+    ufnsui()
+    {
+      //失败
+    }
   }
-}
-
-
-
-
+  
+  
+  
+  
 }
 
 end fn
@@ -57,27 +55,27 @@ t()
 {
   hs(bjxgurl,bjxgwc, "utf-8", null, true, bjxgfh)
   json(bjxgfh, jojx)
-json(jojx, "get", "msg", bjxgzt)
-//syso(bjxgzt)
-f(bjxgzt == "修改完成")
-{
-  ufnsui()
+  json(jojx, "get", "msg", bjxgzt)
+  //syso(bjxgzt)
+  f(bjxgzt == "修改完成")
   {
-    //完成
-//    fn login.logobjlb()
+    ufnsui()
+    {
+      //完成
+      //    fn login.logobjlb()
+    }
   }
-}
-else
-{
-  ufnsui()
+  else
   {
-    //失败
+    ufnsui()
+    {
+      //失败
+    }
   }
-}
-
-
-
-
+  
+  
+  
+  
 }
 
 end fn
