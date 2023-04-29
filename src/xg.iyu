@@ -1,0 +1,800 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+//visibility=gone</ppt>
+<event><eventItme type="clicki">syso("不可点击")</eventItme></event>
+</View>
+<View id="27" did="1" type="RelativeLayout">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=0dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=left|center
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=修改内容
+textSize=34sp
+textColor=#ff000000
+typeface=@MiSans-ExtraLight.ttf
+layout_marginLeft=25.2dp</ppt>
+<event></event>
+</View>
+<View id="23" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="30" did="23" type="CardView">
+<ppt>width=50dp
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#fffafafa
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+//21编辑框内容
+//33浏览器布局不可见,34浏览器
+
+
+f(ss.内容预览 == "false")
+{
+  ufnsui()
+  {
+    
+    fr("@Markdown/Markdown.html",dq)
+    ug(21,"text",dqbjnr)
+    sr(dq,"写入笔记预览的真实内容",dqbjnr,xrwc)
+    fw("%storage/emulated/0/Android/data/com.ZIDCjsb/.mk/Markdown.html",xrwc)
+    us(34,"url","%storage/emulated/0/Android/data/com.ZIDCjsb/.mk/Markdown.html")
+
+    ss 内容预览 = "true"
+    us(33,"visibility",0)
+        us(21,"visibility",8)
+
+  }
+}
+else f(ss.内容预览 == "true")
+{
+  ufnsui()
+  {
+    
+    ss 内容预览 = "false"
+    us(33,"visibility",8)
+        us(21,"visibility",0)
+
+  }
+}</eventItme></event>
+</View>
+<View id="32" did="31" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@e05d104993652c0954e8bcf4b5d79a15..png
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="25" did="23" type="CardView">
+<ppt>width=50dp
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#00ffffff
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+ug(28,"text",xgwbid) 
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username", usname)
+json(usi, "get", "usertoken", token)
+ss("appid="+sss.appld+"&userid="+usid+"&username="+usname+"&id="+xgwbid+"&usertoken="+token,sccs)
+ss(sss.url+"/api/deletenotes",scurl)
+//添加笔记
+t()
+{
+  hs(scurl,sccs, "utf-8", null, true, schq)
+  json(schq, jojx)
+json(jojx, "get", "msg", scsc)
+f(scsc == "删除成功")
+{
+  ufnsui()
+  {
+    //完成
+
+    fn login.logobjlb()
+sss 删除笔记 = "true"
+t()
+{
+  stop("1000")
+  ufnsui()
+  {
+    end()
+  }
+}
+
+
+    //完成    
+  }
+}
+else
+{
+  ufnsui()
+  {
+    //失败
+    tw(scsc)
+
+  }
+}
+
+
+
+
+}
+            </eventItme></event>
+</View>
+<View id="24" did="26" type="ImageView">
+<ppt>width=75dp
+height=75dp
+src=@9d90b7c0ce0ee1df735d90831e5367d4..png
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+textColor=#ff000000
+textSize=24sp
+hint=标题
+textColorHint=#ffa7a7a7
+Background=@
+textCursorDrawable=#ffece226
+textColorHighlight=#ffd6ebff
+typeface=@MiSans-Bold.ttf
+paddingLeft=25dp
+paddingRight=25dp
+paddingBottom=15dp
+paddingTop=25dp</ppt>
+<event></event>
+</View>
+<View id="10" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+</ppt>
+<event></event>
+</View>
+<View id="22" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+
+</ppt>
+<event></event>
+</View>
+<View id="29" did="22" type="NestedScrollView">
+<ppt>width=-1
+height=-1
+layout_marginTop=170dp</ppt>
+<event></event>
+</View>
+<View id="35" did="29" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="21" did="35" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+paddingLeft=25dp
+paddingRight=25dp
+//layout_marginTop=120dp
+gravity=top|left
+hint=请输入笔记内容！
+textColor=#ff2f2f2f
+typeface=@MiSans-Normal.ttf
+textSize=17sp
+background=@</ppt>
+<event></event>
+</View>
+<View id="33" did="35" type="LinearLayout">
+<ppt>ps=Markdown
+width=-1
+height=-1
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="34" did="33" type="WebView">
+<ppt>width=-1
+height=-1
+paddingLeft=25dp
+paddingRight=25dp</ppt>
+<event><eventItme type="onprogresschanged">
+
+
+
+ug(34,"url",k)
+f(k ? "Markdown.html")
+{
+  ufnsui()
+  {
+  }
+}
+else
+{
+  ufnsui()
+  {
+    hws(k)
+    us(34, "gobackorforward", -1)
+  }
+}</eventItme></event>
+</View>
+<View id="15" did="10" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=13dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff9f9f9
+layout_marginLeft=25dp
+layout_marginBottom=25dp
+layout_marginRight=25dp
+</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+//20设置文章密码编辑框
+//29嵌套滚动
+//15设置文章密码卡片布局
+//21内容编辑框
+//1修改内容主布局
+//9修改卡片主布局
+
+f(ss.修改内容密码框 == "false")
+{
+  ufnsui()
+  {
+    ss 修改内容密码框 = "true"
+    us(20,"visibility",0)
+            us(15,"height","107dp")
+            us(29,"layout_margintop","217dp")
+
+  }
+}
+else f(ss.修改内容密码框 == "true")
+{
+  ufnsui()
+  {
+    ss 修改内容密码框 = "false"
+    us(20,"visibility",8)
+        us(15,"height","60dp")
+us(29,"layout_margintop","170dp")
+  }
+}</eventItme></event>
+</View>
+<View id="18" did="17" type="ImageView">
+<ppt>width=33dp
+height=33dp
+src=@1d10ee08b797b762f18dbed4c5b60730..png
+layout_marginLeft=25dp</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=保密设置
+textSize=16sp
+textColor=#ff000000
+typeface=@MiSans-Bold.ttf
+layout_marginLeft=13.2dp</ppt>
+<event></event>
+</View>
+<View id="20" did="16" type="EditText">
+<ppt>width=-1
+height=47dp
+text=
+hint=留空则不设置
+textColorHint=#ff838383
+textColor=#ff000000
+textSize=13sp
+typeface=@MiSans-ExtraLight.ttf
+paddingLeft=25dp
+paddingRight=25dp
+paddingTop=15dp
+paddingBottom=15dp
+background=@
+singleLine=true
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=13dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff9f9f9
+layout_marginLeft=25dp
+layout_marginBottom=25dp
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+//6标题
+//21内容
+//20密码
+ug(6,"text",ss.xgbt)
+ug(21,"text",bjtj)
+ug(20,"text",mima)
+ug(28,"text",ss.xgid) 
+f(mima == "")
+{
+  ufnsui()
+  {
+    //无源密码 
+  ug(36,"text",hqymim) 
+  f(hqymim == null)
+  {
+    ufnsui()
+    {
+      //删除密码
+        ss("&content="+bjtj,ss.bjxgnr)
+  fn tjOrbj.修改()
+  sss 修改笔记 = "true"
+  end()
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //删除源密码
+  ss("&content="+bjtj,ss.bjxgnr)
+  fn tjOrbj.修改()
+  sss 修改笔记 = "true"
+  end()
+    }
+  } 
+
+}
+}
+else
+{
+  ufnsui()
+  {
+    //修改密码/添加密码
+
+
+ug(36,"text",hqymim) 
+  f(hqymim == mima)
+  {
+    ufnsui()
+    {
+      //密码未修改
+            
+        ss("[密码"+mima+"密码]",xgmmnrno)
+        ss("&content="+bjtj+xgmmnrno,ss.bjxgnr)
+  fn tjOrbj.修改()
+  sss 修改笔记 = "true"
+  end()
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //密码修改
+      ss("[密码"+mima+"密码]",xgmmnr)
+      us(36,"text",mima)
+  ss("&content="+bjtj+xgmmnr,ss.bjxgnr)
+  fn tjOrbj.修改()
+  sss 修改笔记 = "true"
+  end()
+    }
+  }
+  
+  
+  
+
+  }
+}
+</eventItme></event>
+</View>
+<View id="13" did="12" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@6af051658269c903ff3582e88c283cf9..png
+layout_marginLeft=28dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=保存修改
+textSize=17sp
+textColor=#ff000000
+typeface=@MiSans-Bold.ttf
+layout_marginLeft=13.2dp</ppt>
+<event></event>
+</View>
+<View id="28" did="1" type="TextView">
+<ppt>ps=id
+width=-2
+height=-2
+text=文本28
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="36" did="1" type="TextView">
+<ppt>ps=密码
+width=-2
+height=-2
+text=文本36
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(3,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+
+//33浏览器布局不可见,34浏览器
+//20设置文章密码编辑框
+//15设置文章密码卡片布局
+//21内容编辑框
+//1修改内容主布局
+//9修改卡片主布局
+
+ss 修改内容密码框 = "false"
+ss 内容预览 = "false"
+
+
+
+us(4,"visibility",0)
+dha(dh, false, true)
+dh(dh, "duration", 450)
+us(4, "dh", dh)
+
+
+dhas(dh, 4, "translationY", 280,0)
+dh(dh, "duration", 400)
+dh(dh, "start")
+
+
+
+/.us(1,"visibility",0)
+us(9,"app_cardcornerradius","16dp")
+dha(dh, false, true)
+dh(dh, "duration", 460)
+us(1, "dh", dh)
+
+
+dhas(dh, 1, "scaleY", 0.8,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+dhas(dh, 1, "scaleX", 0.8,1.0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+
+
+dhas(dh, 1, "translationY", 170,0)
+dh(dh, "duration", 460)
+dh(dh, "start")
+dhon(dh)
+{
+  us(9,"app_cardcornerradius","0dp")
+}
+else
+{
+}
+else
+{
+}
+
+
+./
+s id = sss.文章id
+t()
+{
+  ss(sss.url+"/api/getNotes",cs)
+  ss("appid="+sss.appld+"&id="+id,csj)
+  
+  hs(cs,csj, "utf-8", null, true, scjsc)
+  json(scjsc, jojx)
+  json(jojx, "get", "msg", wec)
+  json(jojx, "get", "data", jjh)
+  syso(scjsc)
+  f(wec == "ok")
+  {
+    ufnsui()
+    {
+  
+      json(jjh, "get", "title", bt)
+        json(jjh, "get", "content", nr)
+          json(jjh, "get", "updatetime", timee)
+          json(jjh, "get", "id", id)          
+          sj(nr,"[密码","密码]",mmhqk)
+          us(36,"text",mmhqk)
+          us(20,"text",mmhqk)
+          f(mmhqk == null)
+          {
+            ufnsui()
+            {
+              us(20,"text","")
+            }
+          }
+          else
+          {
+            ufnsui()
+            {
+              us(20,"text",mmhqk)
+            }
+          }
+                   ss("[密码"+mmhqk+"密码]",mmqcc)
+                   sr(nr,mmqcc,"",wcnr)
+                  
+                      us(6,"text",bt)
+                        us(21,"text",wcnr)
+                          us(28,"text",id)
+                
+          }
+          }
+          }
+          
+}</eventItme><eventItme type="downkey">f(st_kC == "4")
+{
+  ufnsui()
+  {
+    //判断内容是否空
+    
+    ug(6,"text",ss.xgbt)
+    ug(21,"text",bjtj)
+    ug(20,"text",mima)
+    ug(28,"text",ss.xgid)
+    f(mima == "")
+    {
+      ufnsui()
+      {
+        //无源密码
+        ug(36,"text",hqymim)
+        f(hqymim == null)
+        {
+          ufnsui()
+          {
+            //删除密码
+            ss("&content="+bjtj,ss.bjxgnr)
+            fn tjOrbj.修改()
+            sss 修改笔记 = "true"
+            end()
+            
+            dhas(dh, 4, "translationY", 0,280)
+            dh(dh, "duration", 400)
+            dh(dh, "start")
+            
+            
+            dha(dh, true, false)
+            dh(dh, "duration", 450)
+            us(4, "dh", dh)
+            dhon(dh)
+            {
+              us(4,"visibility",0)
+            }
+            
+            
+            
+            
+          }
+        }
+        else
+        {
+          ufnsui()
+          {
+            //删除源密码
+            ss("&content="+bjtj,ss.bjxgnr)
+            fn tjOrbj.修改()
+            sss 修改笔记 = "true"
+            end()
+            
+            dhas(dh, 4, "translationY", 0,280)
+            dh(dh, "duration", 400)
+            dh(dh, "start")
+            
+            
+            dha(dh, true, false)
+            dh(dh, "duration", 450)
+            us(4, "dh", dh)
+            dhon(dh)
+            {
+              us(4,"visibility",0)
+            }
+            
+            
+            
+          }
+        }
+        
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        //修改密码/添加密码
+        
+        
+        ug(36,"text",hqymim)
+        f(hqymim == mima)
+        {
+          ufnsui()
+          {
+            //密码未修改
+            
+            ss("[密码"+mima+"密码]",xgmmnrno)
+            ss("&content="+bjtj+xgmmnrno,ss.bjxgnr)
+            fn tjOrbj.修改()
+            sss 修改笔记 = "true"
+            end()
+            
+            dhas(dh, 4, "translationY", 0,280)
+            dh(dh, "duration", 400)
+            dh(dh, "start")
+            
+            
+            dha(dh, true, false)
+            dh(dh, "duration", 450)
+            us(4, "dh", dh)
+            dhon(dh)
+            {
+              us(4,"visibility",0)
+            }
+            
+            
+            
+            
+          }
+        }
+        else
+        {
+          ufnsui()
+          {
+            //密码修改
+            ss("[密码"+mima+"密码]",xgmmnr)
+            us(36,"text",mima)
+            ss("&content="+bjtj+xgmmnr,ss.bjxgnr)
+            fn tjOrbj.修改()
+            sss 修改笔记 = "true"
+            end()
+            
+            dhas(dh, 4, "translationY", 0,280)
+            dh(dh, "duration", 400)
+            dh(dh, "start")
+            
+            
+            dha(dh, true, false)
+            dh(dh, "duration", 450)
+            us(4, "dh", dh)
+            dhon(dh)
+            {
+              us(4,"visibility",0)
+            }
+            
+            
+            
+            
+          }
+        }
+        
+        
+        
+        
+      }
+    }
+    
+    
+  }
+}</eventItme><eventItme type="loadingComplete">
+gvs(34,wv)
+
+java(ws,wv,"android.webkit.WebView.getSettings")
+
+java(null,ws,"android.webkit.WebSettings.setBuiltInZoomControls","boolean",false)
+
+java(null,ws,"android.webkit.WebSettings.setDisplayZoomControls","boolean",false)
+//禁止浏览器缩放，2为浏览器控件</eventItme></UIEventset>

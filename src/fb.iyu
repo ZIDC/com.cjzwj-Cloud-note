@@ -1,0 +1,353 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=0dp
+app_CardElevation=0dp</ppt>
+<event></event>
+</View>
+<View id="2" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical
+gravity=left|center
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=添加内容
+textSize=34sp
+textColor=#ff000000
+typeface=@MiSans-ExtraLight.ttf
+layout_marginLeft=25.2dp</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+textColor=#ff000000
+textSize=24sp
+hint=标题
+textColorHint=#ffa7a7a7
+Background=@
+textCursorDrawable=#ffece226
+textColorHighlight=#ffd6ebff
+typeface=@MiSans-Bold.ttf
+paddingLeft=25dp
+paddingRight=25dp
+paddingBottom=15dp
+paddingTop=25dp</ppt>
+<event></event>
+</View>
+<View id="10" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+</ppt>
+<event></event>
+</View>
+<View id="22" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+
+</ppt>
+<event></event>
+</View>
+<View id="21" did="22" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+paddingLeft=25dp
+paddingRight=25dp
+layout_marginTop=120dp
+gravity=top|left
+layout_marginTop=170dp
+hint=
+textColor=#ff2f2f2f
+typeface=@MiSans-Normal.ttf
+textSize=17sp
+background=@</ppt>
+<event></event>
+</View>
+<View id="15" did="10" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=13dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff9f9f9
+layout_marginLeft=25dp
+layout_marginBottom=25dp
+layout_marginRight=25dp
+</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+//20设置文章密码编辑框
+//15设置文章密码卡片布局
+//21内容编辑框
+
+
+f(ss.添加内容密码框 == "false")
+{
+  ufnsui()
+  {
+    ss 添加内容密码框 = "true"
+    us(20,"visibility",0)
+            us(15,"height","107dp")
+            us(21,"layout_margintop","217dp")
+
+  }
+}
+else f(ss.添加内容密码框 == "true")
+{
+  ufnsui()
+  {
+    ss 添加内容密码框 = "false"
+    us(20,"visibility",8)
+        us(15,"height","60dp")
+us(21,"layout_margintop","170dp")
+  }
+}</eventItme></event>
+</View>
+<View id="18" did="17" type="ImageView">
+<ppt>width=33dp
+height=33dp
+src=@1d10ee08b797b762f18dbed4c5b60730..png
+layout_marginLeft=25dp</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=保密设置
+textSize=16sp
+textColor=#ff000000
+typeface=@MiSans-Bold.ttf
+layout_marginLeft=13.2dp</ppt>
+<event></event>
+</View>
+<View id="20" did="16" type="EditText">
+<ppt>width=-1
+height=47dp
+text=
+hint=留空则不设置
+textColorHint=#ff838383
+textColor=#ff000000
+textSize=13sp
+typeface=@MiSans-ExtraLight.ttf
+paddingLeft=25dp
+paddingRight=25dp
+paddingTop=15dp
+paddingBottom=15dp
+background=@
+singleLine=true
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=13dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff9f9f9
+layout_marginLeft=25dp
+layout_marginBottom=25dp
+layout_marginRight=25dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">//6标题
+//21内容
+//20密码
+ug(6,"text",ss.tjbt)
+ug(21,"text",bjtj)
+ug(20,"text",mima)
+
+f(mima == "")
+{
+  ufnsui()
+  {
+    //无源密码
+    
+    ss("&content="+bjtj,ss.bjtjnr)
+    fn tjOrbj.添加()
+    sss 添加笔记 = "true"
+    end()
+    
+  }
+}
+else
+{
+  ufnsui()
+  {
+    //添加密码
+    
+    
+    ss("[密码"+mima+"密码]",xgmmnrno)
+    ss("&content="+bjtj+xgmmnrno,ss.bjtjnr)
+    fn tjOrbj.添加()
+    sss 添加笔记 = "true"
+    end()
+    
+  }
+}</eventItme></event>
+</View>
+<View id="13" did="12" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@double-check-svgrepo-com.png
+layout_marginLeft=28dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=保存内容
+textSize=16sp
+textColor=#ff000000
+typeface=@MiSans-Bold.ttf
+layout_marginLeft=13.2dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(3,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+
+
+
+ss 添加内容密码框 = "false"</eventItme><eventItme type="downkey">ug(6,"text",hqbt)
+f(st_kC == "4")
+{
+  ufnsui()
+  {
+    //判断内容是否空
+    
+    
+    f(hqbt == "")
+    {
+      //空
+      end()
+      sss 添加笔记 = "null"
+      
+    }
+    else
+    {
+      ufnsui()
+      {
+        //有内容
+        
+        
+        //返回保存
+        //6标题
+        //21内容
+        //20密码
+        ug(6,"text",ss.tjbt)
+        ug(21,"text",bjtj)
+        ug(20,"text",mima)
+        
+        f(mima == "")
+        {
+          ufnsui()
+          {
+            //无源密码
+            
+            ss("&content="+bjtj,ss.bjtjnr)
+            fn tjOrbj.添加()
+            sss 添加笔记 = "true"
+            end()
+            
+            
+          }
+        }
+        else
+        {
+          ufnsui()
+          {
+            //添加密码
+              
+              ss("[密码"+mima+"密码]",xgmmnrno)
+              ss("&content="+bjtj+xgmmnrno,ss.bjtjnr)
+              fn tjOrbj.添加()
+              sss 添加笔记 = "true"
+              end()
+              
+            }
+          }
+          
+          
+          
+          
+          
+          
+        }
+        
+        
+        
+      }
+    }
+  }</eventItme></UIEventset>

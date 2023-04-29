@@ -1,0 +1,46 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="WebView">
+<ppt>width=-1
+height=-1
+url=@Markdown/yssm.html</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+us(2,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+gvs(4,wv)
+
+java(ws,wv,"android.webkit.WebView.getSettings")
+
+java(null,ws,"android.webkit.WebSettings.setBuiltInZoomControls","boolean",false)
+
+java(null,ws,"android.webkit.WebSettings.setDisplayZoomControls","boolean",false)
+//禁止浏览器缩放，2为浏览器控件</eventItme></UIEventset>

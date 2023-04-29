@@ -1,0 +1,218 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginTop=26dp
+layout_marginBottom=26dp
+app_CardElevation=15dp
+app_CardcornerRadius=13dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical
+gravity=left|center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=访问需要密码
+textSize=16sp
+textColor=#ff000000
+layout_marginLeft=20dp
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="11" did="6" type="CardView">
+<ppt>width=-1
+height=45.3dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+layout_marginLeft=30dp
+layout_marginRight=30dp
+app_CardBackgroundColor=#fffbfbfb
+layout_marginTop=25dp
+layout_marginBottom=18dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=访问密码:
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=用户密码/文章密码
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actiongo
+inputType=textcapcharacters
+paddingRight=15dp</ppt>
+<event></event>
+</View>
+<View id="15" did="6" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+layout_marginTop=1.7dp
+layout_marginBottom=25dp
+app_CardBackgroundColor=#ff8b06ff</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="TextView">
+<ppt>width=-1
+height=-1
+text=查看
+gravity=center
+textSize=15sp
+textColor=#ffffffff
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+ug(ss.mmmm,"text",passw)
+
+//先验证本地密码
+f(passw == ss.mmtx)
+{
+  ufnsui()
+  {
+    
+ss 修改内容密码框 = "false"
+uigo("xg.iyu")
+     java(null,ss.mmutwv,"android.app.Dialog.dismiss")
+  }
+}
+else
+{
+  ufnsui()
+  {
+  
+
+
+
+
+
+us(ss.mmzcan,"visibility",8)
+us(ss.mmjz,"visibility",0)
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "username", usname)
+
+
+t()
+{
+  ss(sss.url+"/api/Login/",login)
+  ss("username="+usname+"&password="+passw+sss.appid,apu)
+  hs(login,apu, "utf-8", null, true, loged)
+  json(loged, jojx)
+  json(jojx, "get", "msg", wec)
+  f(wec == "登录成功")
+  {
+    ufnsui()
+    {
+      
+
+      ss("userpassword\":\""+passw+"\",\"usertoken\"",jsonth)
+      sr(loged,"usertoken\"",jsonth,wcth)
+      fw("$user.jar", wcth)
+      //登录背景布局隐藏
+us(ss.mmzcan,"visibility",0)
+us(ss.mmjz,"visibility",8)
+ss 修改内容密码框 = "false"
+uigo("xg.iyu")
+     java(null,ss.mmutwv,"android.app.Dialog.dismiss")
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+us(ss.mmzcan,"visibility",0)
+us(ss.mmjz,"visibility",8)
+tw("账号密码错误")
+     java(null,ss.mmutwv,"android.app.Dialog.dismiss")
+    }
+  }
+  
+  
+}
+
+
+
+}
+}</eventItme></event>
+</View>
+<View id="18" did="16" type="ProgressBar">
+<ppt>width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//检查更新
+
+
+
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈</eventItme><eventItme type="loadingComplete">
+
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈
+
+</eventItme></UIEventset>

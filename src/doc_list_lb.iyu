@@ -1,0 +1,225 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=10dp
+layout_marginBottom=10dp
+app_CardBackgroundColor=#ffe8e8e8</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="10" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=9dp
+app_CardElevation=0dp
+layout_margin=0.3dp</ppt>
+<event></event>
+</View>
+<View id="6" did="2" type="RelativeLayout">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">ulag(st_vW,12,文章id)
+
+
+us(8,"visibility",8)
+us(9,"visibility",0)
+t()
+{
+  ss(sss.url+"/api/getNotes",cs)
+  ss("appid=10000&id="+文章id,csj)
+  
+  hs(cs,csj, "utf-8", null, true, scjsc)
+  json(scjsc, jojx)
+  json(jojx, "get", "msg", wec)
+  json(jojx, "get", "data", jjh)
+  f(wec == "ok")
+  {
+    ufnsui()
+    {
+      
+      
+      json(jjh, "get", "content", nr)
+      
+      fr("@Markdown/doc.html",dq)
+      
+      sr(dq,"写入笔记预览的真实内容",nr,xrwc)
+      fw("%storage/emulated/0/Android/data/com.ZIDCjsb/.mk/doc.html",xrwc)
+      uigo("doc_ll.iyu")
+      us(8,"visibility",0)
+      us(9,"visibility",8)
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      
+      us(8,"visibility",0)
+      us(9,"visibility",8)
+      tw(wec)
+    }
+  }
+}
+
+}</eventItme></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-1
+height=-1
+text=测试写满文本
+singleLine=true
+ellipsize=end
+paddingLeft=15dp
+layout_marginRight=15dp
+gravity=left|center
+textSize=17sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="7" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=请点击查看
+textSize=13sp
+textColor=#ff666666
+layout_marginLeft=15.5dp
+layout_marginRight=15.5dp
+layout_marginBottom=15.5dp
+layout_marginTop=5dp
+ellipsize=end
+maxLines=5</ppt>
+<event></event>
+</View>
+<View id="11" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=加密
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="0" type="TextView">
+<ppt>ps=id
+width=-2
+height=-2
+text=
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+/.
+//5标题
+//7内容
+ug(5,"text",bt)
+ug(7,"text",bjtj)
+ss("&content="+bjtj+"\",\"powif\": \"(false)&lt;dnnd&gt;",bjtjnr)
+
+sss url="http://api.cjzwjyun.cf"
+ss("&appid=10000&device=123",sss.appid)
+sss appld="10000"
+
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username", usname)
+json(usi, "get", "usertoken", token)
+ss("appid="+sss.appld+"&userid="+usid+"&username="+usname+"&title="+bt+bjtjnr+"&usertoken="+token,bjtjwc)
+ss(sss.url+"/api/addNotes",bjtjurl)
+
+
+//添加笔记
+t()
+{
+  hs(bjtjurl,bjtjwc, "utf-8", null, true, bjtjfh)
+  json(bjtjfh, jojx)
+json(jojx, "get", "msg", bjtjzt)
+syso(bjtjzt)
+syso(bjtjfh)
+f(bjtjzt == "添加完成")
+{
+  ufnsui()
+  {
+    //完成
+  }
+}
+else
+{
+  ufnsui()
+  {
+    //失败
+  }
+}
+
+
+
+
+}</eventItme><eventItme type="loadingComplete">
+
+/.
+
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username",name)
+ss("appid=10000&userid=2&username=zwjjk&limit=100000"+"&page=1"+,bjhqwc)
+ss("http://api.cjzwjyun.cf"+"/api/Noteslist",bjhqurl)
+t()
+{
+  
+  
+  hs(bjhqurl,bjhqwc, "utf-8", null, true, bjhqjg)
+  
+
+  
+  
+fr("@j",kl)  
+  
+  sr(bjhqjg,kl,"",ok) 
+  json(bjhqjg, jojx)
+  json(jojx, "get", "code", zto)
+json(jojx, "get", "data", zhu)
+syso(zhu)
+      
+}      
+      
+      </eventItme></UIEventset>

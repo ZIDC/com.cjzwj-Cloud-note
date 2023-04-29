@@ -1,0 +1,81 @@
+fn 添加()
+
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username", usname)
+json(usi, "get", "usertoken", token)
+ss("appid="+sss.appld+"&userid="+usid+"&username="+usname+"&title="+ss.tjbt+ss.bjtjnr+"&usertoken="+token,bjtjwc)
+ss(sss.url+"/api/addNotes",bjtjurl)
+//添加笔记
+t()
+{
+  hs(bjtjurl,bjtjwc, "utf-8", null, true, bjtjfh)
+  json(bjtjfh, jojx)  
+  json(jojx, "get", "msg", bjtjzt)
+  f(bjtjzt == "添加完成")
+  {
+    ufnsui()
+    {
+      //完成
+      //    fn login.logobjlb()
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //失败
+    }
+  }
+  
+  
+  
+  
+}
+
+end fn
+
+
+
+fn 修改()
+
+
+fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username", usname)
+json(usi, "get", "usertoken", token)
+ss("appid="+sss.appld+"&userid="+usid+"&username="+usname+"&id="+ss.xgid+"&title="+ss.xgbt+ss.bjxgnr+"&usertoken="+token,bjxgwc)
+ss(sss.url+"/api/editNotes",bjxgurl)
+//修改笔记
+t()
+{
+  hs(bjxgurl,bjxgwc, "utf-8", null, true, bjxgfh)
+  json(bjxgfh, jojx)
+  json(jojx, "get", "msg", bjxgzt)
+  //syso(bjxgzt)
+  f(bjxgzt == "修改完成")
+  {
+    ufnsui()
+    {
+      //完成
+      //    fn login.logobjlb()
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      //失败
+    }
+  }
+  
+  
+  
+  
+}
+
+end fn

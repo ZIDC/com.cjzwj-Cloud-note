@@ -1,0 +1,281 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginTop=26dp
+layout_marginBottom=26dp
+app_CardElevation=15dp
+app_CardcornerRadius=13dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=修改密码
+textSize=18sp
+textColor=#ff000000
+layout_marginLeft=20dp
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="CardView">
+<ppt>width=-1
+height=45.3dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+app_CardBackgroundColor=#fffbfbfb
+layout_marginTop=20dp
+layout_marginBottom=18dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=旧密码
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入旧密码
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actionnext
+inputType=textcapcharacters
+paddingRight=15dp</ppt>
+<event></event>
+</View>
+<View id="11" did="6" type="CardView">
+<ppt>width=-1
+height=45.3dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+app_CardBackgroundColor=#fffbfbfb
+layout_marginTop=5dp
+layout_marginBottom=18dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=新密码
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入新密码
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actionnext
+inputType=textcapcharacters
+paddingRight=80dp</ppt>
+<event></event>
+</View>
+<View id="19" did="6" type="CardView">
+<ppt>width=-1
+height=42.3dp
+app_CardElevation=0dp
+app_CardcornerRadius=6dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+app_CardBackgroundColor=#fffbfbfb
+layout_marginTop=5dp
+layout_marginBottom=18dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="TextView">
+<ppt>width=-2
+height=-2
+text=邮箱
+layout_marginLeft=15dp
+layout_marginRight=8dp
+textSize=16sp
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="22" did="20" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=填入邮箱
+textSize=13sp
+textColorHint=#ff6c6c6c
+background=@
+textColor=#ff000000
+imeOptions=actionnext
+inputType=textcapcharacters
+paddingRight=83dp</ppt>
+<event></event>
+</View>
+<View id="15" did="6" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardElevation=0dp
+app_CardcornerRadius=7dp
+layout_marginLeft=50dp
+layout_marginRight=50dp
+layout_marginTop=1.7dp
+layout_marginBottom=25dp
+app_CardBackgroundColor=#ff8b06ff</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="TextView">
+<ppt>width=-1
+height=-1
+text=开始修改
+gravity=center
+textSize=15sp
+textColor=#ffffffff
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+ug(ss.czmm1yhm,"text",czmmoldname)
+ug(ss.czmm1mm,"text",czmmnmm)
+
+
+us(ss.czmm1zcan,"visibility",8)
+us(ss.czmm1jz,"visibility",0)
+
+
+
+
+t()
+{
+  fr("$user.jar", yhpz)
+json(yhpz, jojx)
+json(jojx, "get", "data", usi)
+json(usi, "get", "id",usid)
+json(usi, "get", "username",name)
+json(usi, "get", "usertoken",usertoken)
+  ss(sss.url+"/api/UpdatePassword",czmm)
+  ss("&appid="+sss.appld+"username="+name+"&id="+usid+"&usertoken="+usertoken+"&oldpwd="+czmmoldname+"&newpwd="+czmmnmm,zcs)
+  hs(czmm,zcs, "utf-8", null, true, zced)
+  json(zced, jojx)
+  json(jojx, "get", "msg", xgwc)
+  f(xgwc == "修改成功")
+  {
+    ufnsui()
+    {
+      //成功
+      us(ss.czmm1zcan,"visibility",0)
+      us(ss.czmm1jz,"visibility",8)
+      ss(xgwc+"请重新登录，部分功能将无法使用",ts)
+      tw(ts)
+      java(null,ss.czmm1utwv,"android.app.Dialog.dismiss")
+      
+    }
+    
+  }
+  else
+  {
+    ufnsui()
+    {
+      //失败
+      us(ss.czmm1zcan,"visibility",0)
+      us(ss.czmm1jz,"visibility",8)
+      tw(xgwc)
+    }
+  }  
+  
+}</eventItme></event>
+</View>
+<View id="18" did="16" type="ProgressBar">
+<ppt>width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈
+//26发送验证码按钮
+//29发送邮箱冷却
+//33验证码编辑框
+</eventItme><eventItme type="loadingComplete">
+
+
+//9注册账号编辑框
+//14注册密码编辑框
+//17注册按钮
+//18注册加载圈
+
+</eventItme></UIEventset>
