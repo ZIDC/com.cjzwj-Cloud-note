@@ -1,0 +1,151 @@
+
+
+fn bao()
+
+
+
+//写入载入事件
+cls("de.robv.android.xposed.XposedBridge",klazz)
+f(klazz != null)
+{
+end()
+java(null,null,"java.lang.System.exit","int",1)
+}
+cls("de.robv.android.xposed.XposedBridge",klazz)
+f(klazz != null)
+{
+end()
+java(null,null,"java.lang.System.exit","int",1)
+javass(disable,null,klazz,"disableHooks",true)
+f(disable)
+{
+end()
+}
+else
+{
+end()
+}
+}
+java(thread,null,"java.lang.Thread.currentThread")
+java(stackTrace,thread,"java.lang.Thread.getStackTrace")
+s hasHook = false
+for(st;stackTrace)
+{
+java(sts,st,"java.lang.Object.toString")
+f(sts ? "de.robv.android.xposed." || sts ? "me.weishu.epic." || sts ? "me.weishu.exposed.")
+{
+s hasHook = true
+break
+}
+}
+f(hasHook)
+{
+end()
+java(null,null,"java.lang.System.exit","int",1)
+}
+fr("/proc/self/maps",maps)
+f(maps ? "XposedBridge.jar" || maps ? "libepic.so" || maps ? "libdexposed.so" || maps ? "libsubstrate.so")
+{
+end()
+java(null,null,"java.lang.System.exit","int",1)
+}
+java(isVxp,null,"java.lang.System.getProperty","String","vxp","String","0")
+f(isVxp == "1")
+{
+end()
+java(null,null,"java.lang.System.exit","int",1)
+}
+java(filesDir,activity,"android.content.Context.getFilesDir")
+f(filesDir ? "io.va.exposed")
+{
+java(null,null,"java.lang.System.exit","int",1)
+end()
+}
+
+s isVpn = false
+java(nis,null,"java.net.NetworkInterface.getNetworkInterfaces")
+f(nis != null)
+{
+java(list,null,"java.util.Collections.list","java.util.Enumeration",nis)
+for(ni;list)
+{
+java(up,ni,"java.net.NetworkInterface.isUp")
+java(ia,ni,"java.net.NetworkInterface.getInterfaceAddresses")
+java(size,ia,"java.util.List.size")
+f(up && size != 0)
+{
+java(name,ni,"java.net.NetworkInterface.getName")
+f(name == "tun0" || name == "ppp0")
+{
+s isVpn = true
+break
+}
+}
+}
+}
+f(isVpn==true)
+{
+
+end()
+endcode
+
+}
+else
+{
+
+}
+
+
+
+s zt = false
+
+java(nis,null,"java.net.NetworkInterface.getNetworkInterfaces")
+
+f(nis != null){
+
+java(list,null,"java.util.Collections.list","java.util.Enumeration",nis)
+
+for(ni;list){
+
+java(up,ni,"java.net.NetworkInterface.isUp")
+
+java(ia,ni,"java.net.NetworkInterface.getInterfaceAddresses")
+
+java(size,ia,"java.util.List.size")
+
+f(up && size != 0){
+
+java(name,ni,"java.net.NetworkInterface.getName")
+
+f(name == "tun0" || name == "ppp0"){
+
+s zt = true
+
+break
+
+}
+
+}
+
+}
+
+}
+
+f(zt==true)
+
+{
+
+end()
+
+}
+
+else
+
+{
+
+syso("没有抓包")
+
+}
+
+
+end fn
